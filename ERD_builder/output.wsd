@@ -1,0 +1,468 @@
+@startuml
+
+<style>
+title {
+  HorizontalAlignment right
+  FontSize 24
+  FontColor blue
+}
+
+header {
+  HorizontalAlignment center
+  FontSize 18
+  ' FontColor purple
+}
+
+footer {
+  HorizontalAlignment left
+  FontSize 28
+  FontColor red
+}
+
+legend {
+  FontSize 15
+  BackGroundColor yellow
+  Margin 10
+  Padding 5
+}
+
+caption {
+  FontSize 32
+}
+
+arrow {
+  FontSize 18
+  Padding 50
+  Margin 50
+}
+
+</style>
+
+header Draft
+
+title IDEA4RC DataModel
+
+' hide the spot
+hide circle
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "Patient" as p {
+    PK | TBD
+    --
+    + <color:yellow>Sex</color>
++ <color:red>Race</color>
++ <color:yellow>CountryOfResidence</color>
++ <color:red>Smoking</color>
+- <color:red>SmokingType</color>
+# <color:red>CigarettesOrCigarsSmokedPerDay</color>
+# <color:red>NumberOfYearsAsAsmoker</color>
++ <color:red>Alcohol</color>
+- <color:yellow>Comorbidity</color>
+# <color:green>BMI</color>
+- <color:red>MyocardialInfarction</color>
+- <color:red>CongestiveHeartFailure</color>
+- <color:red>PeripheralVascularDisease</color>
+- <color:red>CerebrovascularAccidentExceptHemiplegia</color>
+- <color:red>Dementia</color>
+- <color:red>ChronicPulmonaryDisease</color>
+- <color:red>ConnectiveTissueDisease</color>
+- <color:red>Ulcer</color>
+- <color:red>MildLiverDisease</color>
+- <color:red>ModerateToSevereLiverDisease</color>
+- <color:red>DiabetesWithoutComplications</color>
+- <color:red>DiabetesWithEndOrganDamage</color>
+- <color:red>Hemiplegia</color>
+- <color:red>ModerateToSevereRenalDisease</color>
+- <color:red>SolidTumorNonMetastatic</color>
+- <color:red>MetastaticSolidTumor</color>
+- <color:red>Leukemia</color>
+- <color:red>Lymphoma</color>
+- <color:red>MultipleMyeloma</color>
+- <color:red>Aids</color>
+- <color:red>ecogPS</color>
+- <color:red>KarnofsyIndexAtDiagnosis</color>
+- <color:red>nan</color>
++ <color:green>NoGeneticSyndromeWho2020</color>
++ <color:green>OlliersDisease</color>
++ <color:green>MaffuciSyndrome</color>
++ <color:green>liFraumeniSyndrome</color>
++ <color:green>mcCuneAlbrightSyndrome</color>
++ <color:green>MultipleOsteochondromas</color>
++ <color:green>NeurofibromatosisType1</color>
++ <color:green>rothmundThomsonSyndrome</color>
++ <color:green>WernerSyndrome</color>
++ <color:green>Retinoblastoma</color>
++ <color:green>PagetDisease</color>
++ <color:green>OtherGeneticSyndromeWho2020</color>
++ <color:green>OccurrenceOfOtherCancer</color>
++ <color:green>PreviousCancerTreatment</color>
+
+    }
+entity "HospitalData" as hd {
+    PK | TBD
+    --
+    + <color:red>hospitalName</color>
+
+    }
+entity "HospitalPatientRecords" as hpr {
+    PK | TBD
+    --
+    + <color:red>patient</color>
++ <color:red>hospitalData</color>
++ <color:red>dateOfFirstContactWithTheHospital</color>
+
+    }
+entity "PatientFollowUp" as pfu {
+    PK | TBD
+    --
+    + <color:yellow>Patient</color>
++ <color:yellow>statusAtLastFollowUp</color>
++ <color:yellow>PatientFollowUpDate</color>
++ <color:red>NewCancerDiagnosis</color>
++ <color:red>DateOfNewCancerDiagnosis</color>
++ <color:red>NewCancerTopography</color>
+
+    }
+entity "EpisodeEvent" as ee {
+    PK | TBD
+    --
+    + <color:yellow>cancerEpisode</color>
++ <color:yellow>EventType</color>
+- <color:black>DefinedAt</color>
++ <color:yellow>DateOfEpisode</color>
++ <color:yellow>IsLocal</color>
++ <color:yellow>IsRegional</color>
++ <color:yellow>IsMetastatic</color>
++ <color:yellow>siteOfMetastasisSoftTissue</color>
++ <color:yellow>siteOfMetastasisDistantLymphNodes</color>
++ <color:yellow>siteOfMetastasisLung</color>
++ <color:yellow>siteOfMetastasisBone</color>
++ <color:yellow>siteOfMetastasisLiver</color>
++ <color:yellow>siteOfMetastasisPleura</color>
++ <color:yellow>siteOfMetastasisPeritoneum</color>
++ <color:yellow>siteOfMetastasisBrain</color>
++ <color:yellow>siteOfMetastasisOtherViscera</color>
++ <color:yellow>siteOfMetastasisUnknown</color>
+
+    }
+entity "CancerEpisode" as ce {
+    PK | TBD
+    --
+    + <color:yellow>Patient</color>
++ <color:yellow>dateOfDiagnosis</color>
++ <color:green>TypeOfBiopsy</color>
++ <color:yellow>BiopsyDoneBy</color>
++ <color:yellow>AgeAtDiagnosis</color>
++ <color:green>RadiotherapyInducedSarcoma</color>
+- <color:yellow>Grading</color>
++ <color:red>histologyHN</color>
++ <color:green>histologySarcoma</color>
+- <color:red>nan</color>
++ <color:red>HistologySquamous</color>
++ <color:red>HistologyAdenocarcinoma</color>
++ <color:red>HistologyNeuroendocrine</color>
++ <color:red>HistologyOdontogenicCarcinoma</color>
++ <color:red>HistologySNUC</color>
+- <color:black>nan</color>
++ <color:green>HistologySubgroupAdipocyticTumours
+</color>
++ <color:green>histologySubgroupFmtTumours</color>
++ <color:green>histologySubgroupSocalledFibrohistiocyticTumours</color>
++ <color:green>VascularTumours
+</color>
++ <color:green>pericyticPerivascularTumours</color>
++ <color:green>SmoothMuscleTumours
+</color>
++ <color:green>SkeletalMuscleTumours</color>
++ <color:green>chondroOsseousTumours</color>
++ <color:green>PeripheralNerveSheathTumours
+</color>
++ <color:green>TumoursOfUncertainDifferentiation
+</color>
++ <color:green>undifSmallRCelSarcBonAndSofTis</color>
++ <color:green>estAndRelatedTumours</color>
++ <color:green>MiscellaniousMesenchimalTumors</color>
++ <color:green>MixedEpithelialAndMesenchymalTumours</color>
+- <color:black>nan</color>
++ <color:red>NasalCavityAndParanasalSinusesSubsite</color>
++ <color:red>NasopharynxSubsite</color>
++ <color:red>HypopharynxSubsite</color>
++ <color:red>OropharynxSubsite</color>
++ <color:red>LarynxSubsite</color>
++ <color:red>OralCavitySubsite</color>
++ <color:red>LipSubsite</color>
+- <color:black>nan</color>
++ <color:green>UpperAndLowerLimbsSubsite</color>
++ <color:green>TrunkWallSubsite</color>
++ <color:green>IntraAbdominalSubsite</color>
++ <color:green>IntraThoracicSubsite</color>
++ <color:green>GenitoUrinarySubsite</color>
++ <color:green>HeadAndNeckSubsite</color>
++ <color:green>BreastSubsite</color>
++ <color:green>OtherSubsite</color>
++ <color:green>TumorSize</color>
++ <color:green>Depth</color>
++ <color:green>BiopsyMitoticCount</color>
+# <color:red>PlasmaticEbvDnaAtBaseline</color>
+- <color:red>HpvStatus</color>
+- <color:red>crpCReactiveProteinTested</color>
+
+    }
+entity "GeneticTestExpression" as gte {
+    PK | TBD
+    --
+    + <color:red>episodeEvent</color>
+# <color:red>GeneExpressionAnalysisPerformed</color>
+- <color:red>DateOfGeneExpression</color>
+# <color:red>GeneMutationAnalysisPerformed</color>
+- <color:red>DateOfGeneMutation</color>
+# <color:red>TestsForChromosomeTranslocationsPerformed</color>
+- <color:red>DateOfTraslocation</color>
+# <color:red>ngsPerformed</color>
+- <color:red>DateOfNgs</color>
+# <color:red>pcrTestPerformed</color>
+- <color:red>DateOfPcr</color>
+# <color:red>ImmunohistochemistryPerformed</color>
+- <color:red>DateOfImmunohistochemistry</color>
+# <color:red>ctDnaPerformed</color>
+- <color:red>DateOfCtdna</color>
+
+    }
+entity "ClinicalStage" as cs {
+    PK | TBD
+    --
+    + <color:yellow>episodeEvent</color>
++ <color:red>Ct</color>
++ <color:red>Cn</color>
++ <color:green>Localised</color>
++ <color:green>locoRegional</color>
++ <color:red>rENE</color>
++ <color:red>Cm</color>
++ <color:red>ClinicalStaging</color>
++ <color:red>AjccEdition</color>
+# <color:red>SoftTissue</color>
+# <color:red>DistantLymphNode</color>
+# <color:red>Lung</color>
+# <color:red>Bone</color>
+# <color:red>Liver</color>
+# <color:red>Pleura</color>
+# <color:red>Peritoneum</color>
+# <color:red>Brain</color>
+# <color:red>OtherViscera</color>
+# <color:red>Unknown</color>
+
+    }
+entity "PathologicalStage" as ps {
+    PK | TBD
+    --
+    + <color:yellow>episodeEvent</color>
+- <color:red>Pt</color>
+- <color:red>Pn</color>
+- <color:red>Pm</color>
+- <color:red>rENE</color>
+# <color:red>ExtranodalExtent</color>
++ <color:red>SentinelNode</color>
+- <color:red>NeckDissection</color>
++ <color:red>PathologicalStaging</color>
++ <color:red>AjccEdition</color>
+- <color:red>SoftTissue</color>
+- <color:red>DistantLymphNode</color>
+- <color:red>Lung</color>
+- <color:red>Bone</color>
+- <color:red>Liver</color>
+- <color:red>Pleura</color>
+- <color:red>Peritoneum</color>
+- <color:red>Brain</color>
+- <color:red>OtherViscera</color>
+- <color:red>Unknown</color>
+
+    }
+entity "PathologicalReportInfo(Sarc.)" as pris {
+    PK | TBD
+    --
+    + <color:green>episodeEvent</color>
+- <color:green>DegreeOfCytologicAtypia
+</color>
+- <color:green>PatternOfGrowth</color>
+- <color:green>MitoticActivity</color>
+- <color:green>InfiltrationOfSurroundingMyometrium</color>
+- <color:green>TypeOfNecrosis</color>
+- <color:green>expressionOfErPr</color>
+- <color:green>VascularIntrusionOrInvasion</color>
+- <color:green>P16AndP53Expression</color>
+
+    }
+entity "Surgery" as s {
+    PK | TBD
+    --
+    + <color:yellow>episodeEvent</color>
++ <color:green>SurgeryPerformed</color>
++ <color:red>SurgeryHospital</color>
++ <color:yellow>DateOfSurgery</color>
++ <color:yellow>SurgeryIntention</color>
++ <color:red>TypeOfSurgicalApproachOnTumour</color>
++ <color:yellow>MarginsAfterSurgery</color>
++ <color:green>TumorRupture</color>
++ <color:green>SurgicalSpecimenMitoticCount
+</color>
++ <color:green>SurgicalSpecimenGradingOnlyInUntreatedTumours</color>
++ <color:green>IsolatedLimbPerfusion
+
+
+</color>
+- <color:red>Reconstruction</color>
++ <color:red>NeckSurgery</color>
++ <color:red>DateOfNeckSurgey</color>
++ <color:red>LateralityOfTheDissection</color>
++ <color:red>SurgeryOnM</color>
++ <color:red>DateOfSurgeryOnM</color>
+- <color:red>siteOfSurgeryOnMetastasisSoftTissue</color>
+- <color:red>siteOfSurgeryOnMetastasisDistantLymphNodes</color>
+- <color:red>siteOfSurgeryOnMetastasisLung</color>
+- <color:red>siteOfSurgeryOnMetastasisBone</color>
+- <color:red>siteOfSurgeryOnMetastasisLiver</color>
+- <color:red>siteOfSurgeryOnMetastasisPleura</color>
+- <color:red>siteOfSurgeryOnMetastasisPeritoneum</color>
+- <color:red>siteOfSurgeryOnMetastasisBrain</color>
+- <color:red>siteOfSurgeryOnMetastasisOtherViscera</color>
+- <color:red>siteOfSurgeryOnMetastasisUnknown</color>
++ <color:red>surgicalComplications</color>
+
+    }
+entity "SystemicTreatment" as st {
+    PK | TBD
+    --
+    + <color:yellow>episodeEvent</color>
++ <color:yellow>TypeOfSystemicTreatment</color>
++ <color:red>Intent</color>
++ <color:red>Setting</color>
+- <color:black>nan</color>
++ <color:yellow>StartDateSystemicTreatment</color>
++ <color:yellow>EndDateSystemicTreatment</color>
+- <color:yellow>numberOfCyclesAdministrations</color>
+- <color:yellow>Regimen</color>
++ <color:black>Drugs1</color>
++ <color:black>Drugs2</color>
++ <color:black>Drugs3</color>
++ <color:red>StartDateRegimenChanged</color>
++ <color:red>EndDateRegimenChanged</color>
++ <color:yellow>ReasonForEndOfTreatment</color>
++ <color:yellow>treatmentResponse</color>
+
+    }
+entity "Radiotherapy" as r {
+    PK | TBD
+    --
+    + <color:yellow>episodeEvent</color>
++ <color:yellow>Radiotherapy</color>
++ <color:yellow>Intent</color>
+- <color:yellow>Setting</color>
++ <color:yellow>BeamQuality</color>
+- <color:red>otherSpecify</color>
++ <color:yellow>TreatmentTechnique</color>
++ <color:yellow>totalDoseGy</color>
++ <color:black>fractionSize</color>
++ <color:yellow>NumberOfFractions</color>
+- <color:red>AdaptiveRt</color>
+- <color:red>igrt</color>
++ <color:yellow>StartDate</color>
++ <color:yellow>EndDate</color>
+- <color:black>TreatmentSites:</color>
+- <color:yellow>PrimaryOnly</color>
+- <color:yellow>NeckOnly</color>
++ <color:yellow>PrimaryAndIpsilateralNeck</color>
++ <color:yellow>PrimaryAndBilateralNeck</color>
++ <color:yellow>DistantMetastasis</color>
+- <color:black>MetastaticTreatmentSites:</color>
+# <color:yellow>Lung
+</color>
+# <color:yellow>Mediastinum
+</color>
+# <color:yellow>Bone
+</color>
+# <color:yellow>SoftTissue
+</color>
+# <color:yellow>Liver
+</color>
++ <color:yellow>TreatmentCompletedAsPlanned?</color>
++ <color:green>RegionalDeepHyperthemia</color>
+- <color:green>Rdh_Startdate</color>
+- <color:green>Rdh_Enddate</color>
+- <color:green>nan</color>
+
+    }
+entity "OtherLocalTreatment" as olt {
+    PK | TBD
+    --
+    + <color:yellow>episodeEvent</color>
+- <color:green>episodeEvent</color>
+- <color:green>nan</color>
++ <color:yellow>StartDate</color>
++ <color:yellow>EndDate</color>
+- <color:black>nan</color>
+- <color:black>nan</color>
+- <color:black>nan</color>
+- <color:black>nan</color>
+- <color:black>nan</color>
+
+    }
+entity "TreatmentResponse" as tr {
+    PK | TBD
+    --
+    + <color:yellow>episodeEvent</color>
++ <color:yellow>treatmentResponse</color>
++ <color:yellow>treatmentResponseDefinedDone</color>
+
+    }
+entity "AdverseEvent" as ae {
+    PK | TBD
+    --
+    + <color:red>episodeEvent</color>
++ <color:red>adverseEventType</color>
++ <color:red>AdverseEventStartingDate</color>
++ <color:red>AdverseEventDuration</color>
++ <color:black>refers to the patient's first adverse event</color>
+
+    }
+p "1" ||--|{ "1..N" hpr
+hd "1..N" ||--|{ "1" hpr
+
+p "1" ||--o{ "0..N" ce
+ce "1..N" ||--|{ "1" ee
+ee "1" ||--o{ "0..N" r
+ee "1" ||--o{ "0..N" s
+ee "1" ||--o{ "0..N" st
+ce "0..1" ||--o| "1" ps
+ce "0..1" ||--o| "1" cs
+
+ce "0..1" ||--o{ "1" tr
+ee "0..N" ||--o{ "1" gte
+
+p "0..N" ||--o{ "1" pfu
+
+note as N1
+The relations to AdverseEvent are a XOR
+end note
+
+s "1" ||--o{ "0..N" ae
+'note on link: XOR
+st "0..N" ||--o{ "1" ae
+'note on link: XOR
+r "1" ||--o{ "0..N" ae
+'note on link: XOR
+
+s .. N1
+st .. N1
+r .. N1
+legend
+red -> Mandatory
+yellow -> Recommended
+green -> Optional
+---------
+Each variable (and entity if needed) is related to the datamodels,
+HN means Head and Neck
+S means Sarcoma
+end legend
+@enduml
