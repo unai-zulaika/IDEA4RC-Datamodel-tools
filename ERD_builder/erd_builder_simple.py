@@ -5,7 +5,7 @@ import random
 sheet_id = "1Vw1Dr2K4oG__cDQTutGaJhZvGUvQTLwc4qWreP6qMSs"
 
 INPUT_FILEPATH = "IDEA4RC_DM_V1.xlsx"
-OUTPUT_FILEPATH = "output.wsd"
+OUTPUT_FILEPATH = "output_simple.wsd"
 
 START_STRING = """@startuml
 
@@ -41,7 +41,7 @@ caption {
 
 arrow {
   FontSize 18
-  Padding 50
+  Padding 90
   Margin 50
 }
 
@@ -55,23 +55,11 @@ title IDEA4RC DataModel
 hide circle
 
 ' avoid problems with angled crows feet
-skinparam linetype ortho\n"""
+skinparam linetype ortho
+skinparam padding 20
+skinparam nodesep 200
+skinparam ranksep 300\n"""
 
-LEGEND_STRING = """legend
-Text color:
-Blue -> H&N, Sarc. 
-Red -> H&N
-Green -> Sarc.
----------
-Shapes:
-red -> Mandatory
-yellow -> Recommended
-green -> Optional
----------
-Each variable (and entity if needed) is related to the datamodels,
-HN means Head and Neck
-S means Sarcoma
-end legend"""
 
 RELATION_STRING = """p "1" ||--|{ "1..N" hpr
 hd "1" ||--|{ "1..N" hpr
@@ -147,9 +135,7 @@ def list_variable(variables, required, dataset):
 #PK | {"TBD"}
 #    --
 def create_entity_string(title, short_name, variables, required, dataset):
-    STRING = f"""object \"{title}\" as {short_name.lower()} {{
-    {list_variable(variables, required, dataset)}
-    }}"""
+    STRING = f"""object \"{title}\" as {short_name.lower()}"""
     return STRING
 
 
@@ -189,8 +175,6 @@ with open(OUTPUT_FILEPATH, "w") as f:
 
         f.write("\n")
     f.write(RELATION_STRING)
-    f.write("\n")
-    f.write(LEGEND_STRING)
     f.write("\n")
     f.write("@enduml")
     f.close()

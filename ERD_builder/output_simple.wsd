@@ -1,0 +1,103 @@
+@startuml
+
+<style>
+title {
+  HorizontalAlignment right
+  FontSize 24
+  FontColor blue
+}
+
+header {
+  HorizontalAlignment center
+  FontSize 18
+  ' FontColor purple
+}
+
+footer {
+  HorizontalAlignment left
+  FontSize 28
+  FontColor red
+}
+
+legend {
+  FontSize 15
+  BackGroundColor yellow
+  Margin 10
+  Padding 5
+}
+
+caption {
+  FontSize 32
+}
+
+arrow {
+  FontSize 18
+  Padding 90
+  Margin 50
+}
+
+</style>
+
+header Draft
+
+title IDEA4RC DataModel
+
+' hide the spot
+hide circle
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+skinparam padding 20
+skinparam nodesep 200
+skinparam ranksep 300
+
+object "Patient" as p
+object "HospitalData" as hd
+object "HospitalPatientRecords" as hpr
+object "PatientFollowUp" as pfu
+object "CancerEpisode" as ce
+object "EpisodeEvent" as ee
+object "GeneticTestExpression" as gte
+object "ClinicalStage" as cs
+object "PathologicalStage" as ps
+object "PathologicalReportInfo" as pri
+object "Surgery" as s
+object "SystemicTreatment" as st
+object "Radiotherapy" as r
+object "OtherLocalTreatment" as olt
+object "TreatmentResponse" as tr
+object "AdverseEvent" as ae
+p "1" ||--|{ "1..N" hpr
+hd "1" ||--|{ "1..N" hpr
+
+p "1" ||--o{ "0..N" ce
+p "1" ||--o{ "0..N" pfu
+
+ce "1" ||--|{ "1..N" ee
+ce "1" ||--o| "0..1" ps
+ce "1" ||--o| "0..1" cs
+
+ee "1" ||--o{ "0..N" r
+ee "1" ||--o{ "0..N" s
+ee "1" ||--o{ "0..N" st
+ee "1" ||--o{ "0..N" olt
+ee "1" ||--o{ "0..N" gte
+ee "1" ||--o{ "0..N" tr
+ee "1" ||--o{ "0..N" pri
+
+
+note as N1
+The relations to AdverseEvent are a XOR
+end note
+
+s "1" ||--o{ "0..N" ae
+'note on link: XOR
+st "0..N" ||--o{ "1" ae
+'note on link: XOR
+r "1" ||--o{ "0..N" ae
+'note on link: XOR
+
+s .. N1
+st .. N1
+r .. N1
+@enduml
