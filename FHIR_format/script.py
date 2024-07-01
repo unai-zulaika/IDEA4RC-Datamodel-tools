@@ -25,6 +25,7 @@ COLUMNS_RENAME_MAP = {
 }
 COLUMNS_REORDER = [
     "Element name",
+    "Dataset",
     "DataElement",
     "Data element description",
     "min",
@@ -105,7 +106,6 @@ with pd.ExcelWriter(OUTPUT_FILEPATH) as writer:
             return return_string
 
         dataframe["Codes"] = dataframe["Vocabulary"].map(formatCodes)
-        print(dataframe["Codes"])
 
         # reorder columns
         dataframe = dataframe[COLUMNS_REORDER]

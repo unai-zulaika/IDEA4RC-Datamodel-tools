@@ -32,7 +32,7 @@ caption {
 
 arrow {
   FontSize 18
-  Padding 90
+  Padding 50
   Margin 50
 }
 
@@ -47,26 +47,39 @@ hide circle
 
 ' avoid problems with angled crows feet
 skinparam linetype ortho
-skinparam padding 20
-skinparam nodesep 200
-skinparam ranksep 300
 
-object "Patient" as p
-object "HospitalData" as hd
-object "HospitalPatientRecords" as hpr
-object "PatientFollowUp" as pfu
-object "CancerEpisode" as ce
-object "EpisodeEvent" as ee
-object "GeneticTestExpression" as gte
-object "ClinicalStage" as cs
-object "PathologicalStage" as ps
-object "PathologicalReportInfo" as pri
-object "Surgery" as s
-object "SystemicTreatment" as st
-object "Radiotherapy" as r
-object "OtherLocalTreatment" as olt
-object "TreatmentResponse" as tr
-object "AdverseEvent" as ae
+object "Patient" as p {
+    }
+object "HospitalData" as hd {
+    }
+object "HospitalPatientRecords" as hpr {
+    }
+object "PatientFollowUp" as pfu {
+    }
+object "CancerEpisode" as ce {
+    }
+object "EpisodeEvent" as ee {
+    }
+object "GeneticTestExpression" as gte {
+    }
+object "Stage" as s {
+    }
+object "PathologicalReportInfo" as pri {
+    }
+object "Surgery" as su {
+    }
+object "SystemicTreatment" as st {
+    }
+object "Radiotherapy" as r {
+    }
+object "OtherLocalTreatment" as olt {
+    }
+object "DrugsForSystemicTreatment" as dfst {
+    }
+object "TreatmentResponse" as tr {
+    }
+object "AdverseEvent" as ae {
+    }
 p "1" ||--|{ "1..N" hpr
 hd "1" ||--|{ "1..N" hpr
 
@@ -74,11 +87,10 @@ p "1" ||--o{ "0..N" ce
 p "1" ||--o{ "0..N" pfu
 
 ce "1" ||--|{ "1..N" ee
-ce "1" ||--o| "0..1" ps
-ce "1" ||--o| "0..1" cs
 
+ee "1" ||--o| "0..1" s
 ee "1" ||--o{ "0..N" r
-ee "1" ||--o{ "0..N" s
+ee "1" ||--o{ "0..N" su
 ee "1" ||--o{ "0..N" st
 ee "1" ||--o{ "0..N" olt
 ee "1" ||--o{ "0..N" gte
@@ -100,4 +112,19 @@ r "1" ||--o{ "0..N" ae
 s .. N1
 st .. N1
 r .. N1
+legend
+Text color:
+Blue -> H&N, Sarc. 
+Red -> H&N
+Green -> Sarc.
+---------
+Shapes:
+red -> Mandatory
+yellow -> Recommended
+green -> Optional
+---------
+Each variable (and entity if needed) is related to the datamodels,
+HN means Head and Neck
+S means Sarcoma
+end legend
 @enduml
