@@ -1,0 +1,3545 @@
+[
+    {
+        "variable_name": "Sex",
+        "variable_description": "Describes biological sex as recorded in the patient's identity document or in the hospital record. In the absence of documentation, the one declared by the patient will be recorded",
+        "datatype": "Label",
+        "entity": "Patient",
+        "values": [
+            "Male",
+            "Female"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Race",
+        "variable_description": "Describes race as recorded in  the hospital record, the one declared by the patient,, otherwise, the onerecognized by the observer",
+        "datatype": "Label",
+        "entity": "Patient",
+        "values": [
+            "White",
+            "Black",
+            "Asian/Pacific Islanders",
+            "American Indian/Alaska Native"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Birth Year",
+        "variable_description": "Year of birth of the patient.",
+        "datatype": "Number",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Country of Residence",
+        "variable_description": "Country of residence at the time of diagnosis",
+        "datatype": "Label",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Smoking",
+        "variable_description": "Describes tobacco smoker habits within the options proposed",
+        "datatype": "Label",
+        "entity": "Patient",
+        "values": [
+            "Current smoker",
+            "Former smoker",
+            "Never smoker"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Cigarettes pack years smoked during life",
+        "variable_description": "The amount of cigarette pack smoked during life",
+        "datatype": "Number",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Alcohol",
+        "variable_description": "Describes alcohol habits within the options proposed",
+        "datatype": "Label",
+        "entity": "Patient",
+        "values": [
+            "Current drinker"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Height/weight (BMI)\n",
+        "variable_description": "Body Mass Index information if weight and height are included. it is calculated as BMI = kg/m2 where kg is a person's weight in kilograms and m2 is their height in metres squared.",
+        "datatype": "Float",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Charlson Comorbidity index",
+        "variable_description": "Provides the Charlson Comorbidity index for the patient",
+        "datatype": "Number",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Comorbidity",
+        "variable_description": "Describes whether the patient was diagnosed before treatment of at least one of the comorbidities listed  next or not",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "Yes"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Myocardial infarction",
+        "variable_description": "Describes comorbidities reported or assesed before treatment. More than one choice is allowed. Please do not include the current cancer in this calculation, only the previous cancer.",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Congestive heart failure",
+        "variable_description": "Previous cancer comorbidity related to Congestive heart failure",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Peripheral vascular disease",
+        "variable_description": "Previous cancer comorbidity related to Peripheral vascular disease",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Cerebrovascular accident  (except hemiplegia)",
+        "variable_description": "Previous cancer comorbidity related to Cerebrovascular accident  (except hemiplegia)",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Dementia",
+        "variable_description": "Previous cancer comorbidity related to Dementia",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Chronic pulmonary disease",
+        "variable_description": "Previous cancer comorbidity related to Chronic pulmonary disease",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Connective tissue disease",
+        "variable_description": "Previous cancer comorbidity related to Connective tissue disease",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Ulcer",
+        "variable_description": "Previous cancer comorbidity related to Ulcer",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Mild liver disease",
+        "variable_description": "Previous cancer comorbidity related to Mild liver disease",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Moderate to severe liver disease",
+        "variable_description": "Previous cancer comorbidity related to Moderate to severe liver disease",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Diabetes (without complications)",
+        "variable_description": "Previous cancer comorbidity related to Diabetes (without complications)",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Diabetes with end organ damage",
+        "variable_description": "Previous cancer comorbidity related to Diabetes with end organ damage",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Hemiplegia",
+        "variable_description": "Previous cancer comorbidity related to Hemiplegia",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Moderate to severe renal disease",
+        "variable_description": "Previous cancer comorbidity related to Moderate to severe renal disease",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Solid tumor (non metastatic)",
+        "variable_description": "Previous cancer comorbidity related to Solid tumor (non metastatic)",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Metastatic solid tumor",
+        "variable_description": "Previous cancer comorbidity related to Metastatic solid tumor",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Leukemia",
+        "variable_description": "Previous cancer comorbidity related to Leukemia",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Lymphoma",
+        "variable_description": "Previous cancer comorbidity related to Lymphoma",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Multiple myeloma",
+        "variable_description": "Previous cancer comorbidity related to Multiple myeloma",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "AIDS",
+        "variable_description": "Previous cancer comorbidity related to AIDS",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Eastern Cooperative Oncology Group performance status (ECOG PS)  at diagnosis",
+        "variable_description": "Eastern Cooperative Oncology Group performance status (ECOG PS)  at diagnosis",
+        "datatype": "Number",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "ECOG PS label",
+        "variable_description": "Eastern Cooperative Oncology Group performance status (ECOG PS)  at diagnosis",
+        "datatype": "Label",
+        "entity": "Patient",
+        "values": [
+            "Answers of ECOG Performance Status [Interpretation]"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Karnofsy index at diagnosis",
+        "variable_description": "Karnofsy index at diagnosis",
+        "datatype": "Number",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Karnofsy index label",
+        "variable_description": "Karnofsy index at diagnosis",
+        "datatype": "Label",
+        "entity": "Patient",
+        "values": [
+            "Answers of Karnofsky Performance Status [Interpretation]"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "",
+        "variable_description": "",
+        "datatype": "",
+        "entity": NaN,
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "No Genetic syndrome WHO 2020 ",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "No evidence of"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Olliers disease",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "Enchondromatosis"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Maffuci syndrome",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "Maffucci syndrome"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Li-Fraumeni syndrome",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "McCune-Albright syndrome",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "McCune Albright syndrome"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Multiple osteochondromas",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "Multiple osteochondroma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Neurofibromatosis type 1",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "Neurofibromatosis type 1"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Rothmund-Thomson syndrome",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Werner syndrome",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "Werner syndrome"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Retinoblastoma",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "Retinoblastoma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Paget disease",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "Osteitis deformans"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Other Genetic syndrome WHO 2020 ",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Patient",
+        "values": [
+            "History of event"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Occurrence of other cancer",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Patient",
+        "values": [
+            "Children (and subchildren) of Neoplasm and/or hamartoma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Previous cancer treatment",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Patient",
+        "values": [
+            "Chemotherapy",
+            "Comprehensive medication therapy review",
+            "Immunological therapy"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Patient",
+        "variable_description": "Patient element",
+        "datatype": "Patient",
+        "entity": "PatientFollowUp",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Status at last follow-up",
+        "variable_description": "Describes the status at last follow-up",
+        "datatype": "Label",
+        "entity": "PatientFollowUp",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Patient Follow Up date",
+        "variable_description": "Date of the clinical follow-up",
+        "datatype": "Date",
+        "entity": "PatientFollowUp",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "New cancer diagnosis",
+        "variable_description": "identifies whether the patient has developed a subsequent primary cancer",
+        "datatype": "Boolean",
+        "entity": "PatientFollowUp",
+        "values": [
+            "Yes"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of new cancer diagnosis",
+        "variable_description": "date of subsequent primary cancer diagnosis",
+        "datatype": "Date",
+        "entity": "PatientFollowUp",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "New cancer topography",
+        "variable_description": "clarifies the site of the subsequent primary cancer (from a predefined list of sites)",
+        "datatype": "Label",
+        "entity": "PatientFollowUp",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Last Contact",
+        "variable_description": "Date of the last contact with the patient, of any kind.",
+        "datatype": "Date",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Hospital Name",
+        "variable_description": "Hospital where the patients is included in the registry",
+        "datatype": "String",
+        "entity": "HospitalData",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Patient",
+        "variable_description": "Patient element containing the data regarding the patient followed by the hospital",
+        "datatype": "ElementReference",
+        "entity": "Patient",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Hospital",
+        "variable_description": "Hospital element containing the data regarding the patient followed by the hospital",
+        "datatype": "ElementReference",
+        "entity": "HospitalData",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of first contact with the hospital",
+        "variable_description": "Date of the first contact of the patient with the hospital registering the data. The hospital will record information on the patient's entire disease trajectory, thus also on procedures and/or  treatments performed in another hospital. The \u201cdate of first contact\u201d will be crossed with other dates to better understand which parts of the disease path were managed by the hospital that registered the patient.",
+        "datatype": "Date",
+        "entity": "HospitalPatientRecords",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Patient",
+        "variable_description": "Patient element containing the data regarding the patient followed by the hospital",
+        "datatype": "ElementReference",
+        "entity": "CancerEpisode",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Version",
+        "variable_description": "Version number of the cancer episode, this version is used for identifying different  diagnosis.",
+        "datatype": "Number",
+        "entity": "CancerEpisode",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Origin Hash",
+        "variable_description": "Origin hash to relate same CancerEpisodes (updated by wrong diagnosis). This origin hash should be created during the ETL process.",
+        "datatype": "String",
+        "entity": "CancerEpisode",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Date of diagnosis (biopsy or surgical piece)",
+        "variable_description": "Date of the procedure from which the specimen was obtained that allowed the histological diagnosis.",
+        "datatype": "Date",
+        "entity": "CancerEpisode",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Type of biopsy",
+        "variable_description": "Type of biopsy performed to the patient",
+        "datatype": "Label",
+        "entity": "CancerEpisode",
+        "values": [
+            "Fine needle biopsy",
+            "Core needle biopsy",
+            "Incisional biopsy",
+            "Excisional biopsy",
+            "Excision"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Biopsy done by",
+        "variable_description": "Describes the institution where diagnostic procedure was performed. A pseudonym for a hospital. It could be the ID assigned from the original hospital.",
+        "datatype": "String",
+        "entity": "CancerEpisode",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Age at diagnosis",
+        "variable_description": "Age of the patient at the time of the diagnosis.",
+        "datatype": "Integer ",
+        "entity": "CancerEpisode",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Radiotherapy induced sarcoma",
+        "variable_description": "radiotherapy induced if the new tumour is in the field or marginal  the anatomical area that received high radiation dose; please specify the interval time from the radiotherapy treatment",
+        "datatype": "Label",
+        "entity": "CancerEpisode",
+        "values": [
+            "Radiation therapy induced change"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Grading",
+        "variable_description": "Grading of the cancer",
+        "datatype": "Label",
+        "entity": "CancerEpisode",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "",
+        "variable_description": "",
+        "datatype": "",
+        "entity": NaN,
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for squamous cancers",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Squamous cell carcinoma, keratinizing",
+            "Schneiderian carcinoma",
+            "Squamous cell carcinoma, spindle cell",
+            "Lymphoepithelial carcinoma",
+            "Basaloid squamous cell carcinoma",
+            "Squamous cell carcinoma",
+            "Adenoid squamous cell carcinoma",
+            "Squamous cell carcinoma, microinvasive",
+            "Giant cell carcinoma",
+            "Verrucous carcinoma",
+            "Papillary squamous cell carcinoma",
+            "Squamous cell carcinoma",
+            "Human papillomavirus positive squamous cell carcinoma"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for adenocarcinomas",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Adenocarcinoma, intestinal type",
+            "Adenocarcinoma",
+            "Cystoadenocarcinoma",
+            "Mucinous adenocarcinoma",
+            "Ceruminous adenocarcinoma",
+            "Papillary adenocarcinoma",
+            "Adenoid cystic carcinoma",
+            "Mucoepidermoid carcinoma",
+            "Polymorphous low grade adenocarcinoma",
+            "Acinar cell carcinoma",
+            "Clear cell adenocarcinoma",
+            "Basal cell adenocarcinoma",
+            "Infiltrating duct carcinoma",
+            "Juvenile carcinoma of the breast",
+            "Paget's disease, extramammary (except Paget's disease of bone)",
+            "Malignant myoepithelioma",
+            "Carcinoma ex pleomorphic adenoma",
+            "Sebaceous adenocarcinoma",
+            "Carcinosarcoma",
+            "Oxyphilic adenocarcinoma",
+            "Cystadenocarcinoma"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for neuroendocrine cancers ",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Small cell neuroendocrine\u00a0carcinoma (SmCC)\u200b",
+            "Malignant poorly differentiated neuroendocrine carcinoma",
+            "Large cell neuroendocrine carcinoma (LCNEC)\u200b",
+            "Neuroendocrine tumor grade 1",
+            "Neuroendocrine tumor grade 2"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for odontogenic carcinomas",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Odontogenic tumor, malignant",
+            "Clear cell odontogenic carcinoma"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for sinonasl undifferentiated carcinomas",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Carcinoma, undifferentiated"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for Adenosquamous carcinoma",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Adenosquamous carcinoma"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for Teratocarcinosarcoma",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Teratocarcinoma"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for NUT carcinoma",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Nuclear protein in testis associated carcinoma"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup forHPV-related Multiphenotypic Sinonasal Carcinoma",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for Olfactory neuroblastoma",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Olfactory neuroblastoma"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for Carcinoma or carcinoma undifferentiated",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "",
+        "variable_description": "",
+        "datatype": "",
+        "entity": NaN,
+        "values": [],
+        "dataset": [
+            "nan"
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "Specifies the histological subgroup for adipocytic tumours",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Atypical lipomatous tumor",
+            "Liposarcoma, well differentiated",
+            "Dedifferentiated liposarcoma",
+            "Myxoid liposarcoma",
+            "Pleomorphic liposarcoma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Aggressive fibromatosis",
+            "Lipofibromatosis",
+            "Giant cell fibroblastoma",
+            "Dermatofibrosarcoma protuberans",
+            "Solitary fibrous tumor and hemangiopericytoma grade 1",
+            "Solitary fibrous tumor and hemangiopericytoma grade 2",
+            "Solitary fibrous tumor and hemangiopericytoma grade 3",
+            "Myofibroblastic tumour",
+            "Cellular fibroma",
+            "Myxoinflammatory fibroblastic sarcoma",
+            "Fibrosarcoma",
+            "Myxofibrosarcoma",
+            "Sclerosing epithelioid fibrosarcoma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Plexiform fibrohistiocytic tumour",
+            "Giant cell tumour of soft parts",
+            "Tenosynovial giant cell tumor",
+            "Tenosynovial giant cell tumor, diffuse",
+            "Malignant tenosynovial giant cell tumor"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Epithelioid haemangioendothelioma",
+            "Angiosarcoma",
+            "Hemangioendothelioma",
+            "Spindle cell hemangioendothelioma",
+            "Retiform haemangioendothelioma",
+            "Papillary intralymphatic angioendothelioma",
+            "Composite haemangioendothelioma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Glomus tumor",
+            "Glomus tumor, malignant"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Smooth muscle tumour",
+            "Epithelioid smooth muscle tumor of uncertain malignant potential",
+            "Myxoid smooth muscle tumour of uncertain mailgnant potential",
+            "Metastasizing leiomyoma",
+            "Leiomyosarcoma",
+            "Epithelioid  leiomyosarcoma",
+            "Myxoid leiomyosarcoma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Embryonal rhabdomyosarcoma",
+            "Alveolar rhabdomyosarcoma",
+            "Pleomorphic rhabdomyosarcoma",
+            "Spindle cell rhabdomyosarcoma",
+            "Ectomesenchymoma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Extraskeletal osteosarcoma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Malignant peripheral nerve sheath tumour",
+            "Melanotic malignant peripheral nerve sheath tumor",
+            "Granular cell tumour",
+            "Granular cell tumour, malignant"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Atypical fibrous histiocytoma",
+            "Angiomatoid fibrous histiocytoma",
+            "Pleomorphic hyalinizing angiectatic tumour",
+            "Hemosiderotic fibrolipomatous tumor",
+            "Synovial sarcoma",
+            "Epithelioid sarcoma",
+            "Alveolar soft part sarcoma",
+            "Clear cell sarcoma",
+            "Extraskeletal myxoid chondrosarcoma",
+            "Desmoplastic small round cell tumor",
+            "Extrarenal rhabdoid tumor",
+            "Perivascular epithelioid tumor, benign",
+            "Perivascular epithelioid tumor, malignant",
+            "Perivascular epithelioid cell tumor",
+            "Intimal sarcoma",
+            "Undifferentiated sarcoma",
+            "Myoepithelioma",
+            "Myoepithelial carcinoma",
+            "Ossifying fibromyxoid tumour",
+            "Ossifying fibromyxoid tumor, malignant",
+            "Mesenchymoma",
+            "Phosphaturic mesenchymal tumor, benign",
+            "Phosphaturic mesenchymal tumour, malignant",
+            "Angiomyxoma",
+            "Angiomatoid fibrous histiocytoma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Ewing sarcoma / peripheral neuroectodermal tumor",
+            "Sarcoma with\u00a0BCOR\u00a0genetic alterations"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Endometrial stromal sarcoma, high grade",
+            "Endometrial stromal sarcoma, low grade"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Uterine tumour resembling ovarian sex cord tumour",
+            "Benign phyllodes tumor",
+            "Borderline phyllodes tumor",
+            "Malignant phyllodes tumor",
+            "Follicular dendritic cell sarcoma",
+            "Histiocytic sarcoma",
+            "Interdigitating dendritic cell sarcoma",
+            "Langherans cell sarcoma",
+            "Fibroblastic reticular cell tumour",
+            "Biphenotypic sinonasal sarcoma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Histology",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Adenosarcoma"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "",
+        "variable_description": "",
+        "datatype": "",
+        "entity": NaN,
+        "values": [],
+        "dataset": [
+            "nan"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in nasal cavity and paranasal sinusess",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Nasal cavity structure",
+            "Maxillary sinus structure",
+            "Ethmoid sinus structure",
+            "Frontal sinus structure",
+            "Sphenoid sinus structure"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in nasopharynx",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Structure of superior wall of nasopharynx",
+            "Structure of posterior wall of nasopharynx",
+            "Structure of lateral wall of nasopharynx",
+            "Structure of anterior wall of nasopharynx"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in hypopharynx",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Structure of postcricoid region",
+            "Structure of hypopharyngeal aspect of aryepiglottic fold",
+            "Structure of posterior wall of hypopharynx",
+            "Structure of piriform recess"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in the parotid gland",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Parotid gland structure"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in submandibular gland",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Submandibular salivary gland structure"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in the sublingual gland",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Sublingual gland structure"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in middle ear",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Middle ear structure"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in oropharynx",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Structure of root of tongue",
+            "Soft palate structure",
+            "Uvula palatina structure",
+            "Tonsillar fossa structure",
+            "Lingual tonsil structure",
+            "Palatine arch structure",
+            "Structure of vallecula of epiglottis",
+            "Structure of anterior surface of epiglottis",
+            "Structure of lateral wall of oropharynx",
+            "Structure of posterior wall of oropharynx",
+            "Embryonic branchial cleft",
+            "Palatine tonsillar structure"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in larynx",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Glottis structure",
+            "Supraglottis structure",
+            "Subglottis structure",
+            "Laryngeal cartilage structure"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in oral cavity",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Structure of dorsum of tongue",
+            "Structure of border of tongue",
+            "Structure of inferior surface of tongue",
+            "Overlapping lesion of tongue",
+            "Structure of gum of maxilla",
+            "Structure of gum of mandible",
+            "Structure of anterior floor of mouth",
+            "Structure of lateral floor of mouth",
+            "Overlapping lesion of floor of mouth",
+            "Hard palate structure",
+            "Buccal mucosa",
+            "Structure of vestibule of mouth",
+            "Structure of retromolar area of mouth"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in lip",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Structure of vermilion border of upper lip",
+            "Structure of vermilion border of lower lip",
+            "Structure of vermilion border of lip",
+            "Structure of mucous membrane of upper lip",
+            "Structure of mucous membrane of lip",
+            "Commissure of lips"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "",
+        "variable_description": "",
+        "datatype": "",
+        "entity": NaN,
+        "values": [],
+        "dataset": [
+            "nan"
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Hand structure",
+            "Wrist region structure",
+            "Forearm structure",
+            "Elbow region structure",
+            "Antecubital fossa (surface region)",
+            "Upper arm structure",
+            "Ankle region structure",
+            "Lower leg structure",
+            "Knee region structure",
+            "popliteal fossa structure",
+            "Upper leg",
+            "Deltoid",
+            "Supraclavicular",
+            "Trapezius",
+            "Buttock",
+            "Pectoral",
+            "Axilla"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Joint structure of thoracic wall",
+            "Anterior abdominal wall structure",
+            "Posterior abdominal wall structure",
+            "Paravertebral region",
+            "Structure of thoracolumbar region of back",
+            "Structure of thoracolumbar junction of vertebral column",
+            "Structure of cervical vertebral column"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Retroperitoneal fascia",
+            "Inferior vena cava structure",
+            "Iliac vessel",
+            "Aorta and aorta, CS",
+            "Structure of renal artery",
+            "Gonadal artery",
+            "Structure of mesenteric artery",
+            "Pelvic region",
+            "Region of esophagus",
+            "Stomach structure",
+            "Duodenal structure",
+            "Jejunal structure",
+            "Stricture of ileum",
+            "Colon structure",
+            "Rectum structure",
+            "Mesentery"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Lung structure",
+            "Heart structure",
+            "Pleura structure",
+            "Region of mediastinum",
+            "Superior vena cava structure",
+            "Aorta and aorta, CS",
+            "Stricture of pulmonary vessel",
+            "Structure of subclavian artery"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Adrenal structure",
+            "Kidney structure",
+            "Region of ureter",
+            "Urinary bladder structure",
+            "Prostatic structure",
+            "Seminal Vescicle structure",
+            "Spermatic Cord structure",
+            "Testis structure",
+            "Uterine structure",
+            "Ovarian structure",
+            "Fallopian tube structure",
+            "Vaginal structure",
+            "Vulval structure"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Face and/or neck structure"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [
+            "Breast structure"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Topography",
+        "variable_description": "Specifies the subsite for cancers occurred in",
+        "datatype": "Label",
+        "entity": "Diagnosis",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Tumor Size",
+        "variable_description": "(the longest diameter; longest dimension between pre operatory imaging and pathological specimen) cm ",
+        "datatype": "Float",
+        "entity": "CancerUnderStudy",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Superficial depth",
+        "variable_description": "(for upper and lower limbs and superficial trunk)  superficial (superficial tumour is located exclusively above the investing fascia without invasion of the fascia), deep (deep tumour is located beneath or invade the investing fascia). All the others are deep by definition",
+        "datatype": "Float",
+        "entity": "CancerUnderStudy",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Deep depth ",
+        "variable_description": "(for upper and lower limbs and superficial trunk)  superficial (superficial tumour is located exclusively above the investing fascia without invasion of the fascia), deep (deep tumour is located beneath or invade the investing fascia). All the others are deep by definition",
+        "datatype": "Float",
+        "entity": "CancerUnderStudy",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Biopsy Mitotic count ",
+        "variable_description": "(Number/10HPF/1mm2, 50HPF/5mm2)",
+        "datatype": "Float",
+        "entity": "CancerUnderStudy",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Plasmatic EBV DNA at baseline",
+        "variable_description": "Describes the result of EBV DNA plasma testing before treatment in NPC type II and III (WHO) ",
+        "datatype": "Label",
+        "entity": "CancerUnderStudy",
+        "values": [
+            "Positive",
+            "Negative",
+            "not tested"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "HPV status",
+        "variable_description": "Describes the result of HPV tumor testing in oral carcinoma ",
+        "datatype": "Label",
+        "entity": "CancerUnderStudy",
+        "values": [
+            "Positive",
+            "Negative",
+            "not tested"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "CRP \u2013 C reactive protein tested ",
+        "variable_description": "Describes the result of C reactive protein testing",
+        "datatype": "Label",
+        "entity": "CancerUnderStudy",
+        "values": [
+            "Positive",
+            "Negative",
+            "not tested"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Cancer Episode Reference",
+        "variable_description": "CancerEpisode element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "EpisodeEvent",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Disease status",
+        "variable_description": "Update to the disease status",
+        "datatype": "Label",
+        "entity": "EpisodeEvent",
+        "values": [
+            "Complete Remission",
+            "Partial Remission",
+            "Progression",
+            "Stable Disease"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Defined At",
+        "variable_description": "Whether or not the progression/recurrence or persistent disease  was performed at the registering hospital or another hospital.",
+        "datatype": "String",
+        "entity": "EpisodeEvent",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Date of episode",
+        "variable_description": "Start date of progression/recurrence or persistent disease",
+        "datatype": "Date",
+        "entity": "EpisodeEvent",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Is New Diagnosis",
+        "variable_description": "Whether the we performed a new diagnosis",
+        "datatype": "Boolean",
+        "entity": "EpisodeEvent",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Is Diagnosis Wrong",
+        "variable_description": "Whether the performed diagnosis on this date is wrong or not. Default False",
+        "datatype": "Boolean",
+        "entity": "EpisodeEvent",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Episode Event Reference",
+        "variable_description": "EpisodeEvent element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "Stage",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "cT",
+        "variable_description": "Specifies the clinical T",
+        "datatype": "Label",
+        "entity": "Stage",
+        "values": [
+            "AJCC/UICC 6th clinical TX Category",
+            "AJCC/UICC 7th clinical TX Category",
+            "AJCC/UICC 8th clinical TX Category",
+            "AJCC/UICC 6th clinical Tis Category",
+            "AJCC/UICC 7th clinical Tis Category",
+            "AJCC/UICC 8th clinical Tis Category",
+            "AJCC/UICC 6th clinical T0 Category",
+            "AJCC/UICC 7th clinical T0 Category",
+            "AJCC/UICC 8th clinical T0 Category",
+            "AJCC/UICC 6th clinical T1 Category",
+            "AJCC/UICC 7th clinical T1 Category",
+            "AJCC/UICC 8th clinical T1 Category",
+            "AJCC/UICC 6th clinical T2 Category",
+            "AJCC/UICC 7th clinical T2 Category",
+            "AJCC/UICC 8th clinical T2 Category",
+            "AJCC/UICC 6th clinical T3 Category",
+            "AJCC/UICC 7th clinical T3 Category",
+            "AJCC/UICC 8th clinical T3 Category",
+            "AJCC/UICC 6th clinical T4 Category",
+            "AJCC/UICC 7th clinical T4 Category",
+            "AJCC/UICC 8th clinical T4 Category",
+            "AJCC/UICC 6th clinical T4a Category",
+            "AJCC/UICC 7th clinical T4a Category",
+            "AJCC/UICC 8th clinical T4a Category",
+            "AJCC/UICC 6th clinical T4b Category",
+            "AJCC/UICC 7th clinical T4b Category",
+            "AJCC/UICC 8th clinical T4b Category"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "cN",
+        "variable_description": "Specifies the clinical N",
+        "datatype": "Label",
+        "entity": "Stage",
+        "values": [
+            "AJCC/UICC 6th clinical NX Category",
+            "AJCC/UICC 7th clinical NX Category",
+            "AJCC/UICC 8th clinical NX Category",
+            "AJCC/UICC 6th clinical N0 Category",
+            "AJCC/UICC 7th clinical N0 Category",
+            "AJCC/UICC 8th clinical N0 Category",
+            "AJCC/UICC 6th clinical N1 Category",
+            "AJCC/UICC 7th clinical N1 Category",
+            "AJCC/UICC 8th clinical N1 Category",
+            "AJCC/UICC 6th clinical N2 Category",
+            "AJCC/UICC 7th clinical N2 Category",
+            "AJCC/UICC 8th clinical N2 Category",
+            "AJCC/UICC 6th clinical N2a Category",
+            "AJCC/UICC 7th clinical N2a Category",
+            "AJCC/UICC 8th clinical N2a Category",
+            "AJCC/UICC 6th clinical N2b Category",
+            "AJCC/UICC 7th clinical N2b Category",
+            "AJCC/UICC 8th clinical N2b Category",
+            "AJCC/UICC 6th clinical N2c Category",
+            "AJCC/UICC 7th clinical N2c Category",
+            "AJCC/UICC 8th clinical N2c Category",
+            "AJCC/UICC 6th clinical N3 Category",
+            "AJCC/UICC 7th clinical N3 Category",
+            "AJCC/UICC 8th clinical N3 Category",
+            "AJCC/UICC 6th clinical N3a Category",
+            "AJCC/UICC 7th clinical N3a Category",
+            "AJCC/UICC 8th clinical N3a Category",
+            "AJCC/UICC 6th clinical N3b Category",
+            "AJCC/UICC 7th clinical N3b Category",
+            "AJCC/UICC 8th clinical N3b Category"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "cM",
+        "variable_description": "Specifies the clinical M",
+        "datatype": "Label",
+        "entity": "Stage",
+        "values": [
+            "AJCC/UICC 6th clinical M0 Category",
+            "AJCC/UICC 7th clinical M0 Category",
+            "AJCC/UICC 8th clinical M0 Category",
+            "AJCC/UICC 6th clinical M1 Category",
+            "AJCC/UICC 7th clinical M1 Category",
+            "AJCC/UICC 8th clinical M1 Category"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "pT",
+        "variable_description": "Specifies the clinical T",
+        "datatype": "Label",
+        "entity": "Stage",
+        "values": [
+            "AJCC/UICC 6th pathological TX Category",
+            "AJCC/UICC 7th pathological TX Category",
+            "AJCC/UICC 8th pathological TX Category",
+            "AJCC/UICC 6th Tis Category",
+            "AJCC/UICC 7th Tis Category",
+            "AJCC/UICC 8th Tis Category",
+            "AJCC/UICC 6th pathological T0 Category",
+            "AJCC/UICC 7th pathological T0 Category",
+            "AJCC/UICC 8th pathological T0 Category",
+            "AJCC/UICC 6th pathological T1 Category",
+            "AJCC/UICC 7th pathological T1 Category",
+            "AJCC/UICC 8th pathological T1 Category",
+            "AJCC/UICC 6th pathological T2 Category",
+            "AJCC/UICC 7th pathological T2 Category",
+            "AJCC/UICC 8th pathological T2 Category",
+            "AJCC/UICC 6th pathological T3 Category",
+            "AJCC/UICC 7th pathological T3 Category",
+            "AJCC/UICC 8th pathological T3 Category",
+            "AJCC/UICC 6th pathological T4 Category",
+            "AJCC/UICC 7th pathological T4 Category",
+            "AJCC/UICC 8th pathological T4 Category",
+            "AJCC/UICC 6th pathological T4a Category",
+            "AJCC/UICC 7th pathological T4a Category",
+            "AJCC/UICC 8th pathological T4a Category",
+            "AJCC/UICC 6th pathological T4b Category",
+            "AJCC/UICC 7th pathological T4b Category",
+            "AJCC/UICC 8th pathological T4b Category"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "pN",
+        "variable_description": "Specifies the clinical N",
+        "datatype": "Label",
+        "entity": "Stage",
+        "values": [
+            "AJCC/UICC 6th pathological NX Category",
+            "AJCC/UICC 7th pathological NX Category",
+            "AJCC/UICC 8th pathological NX Category",
+            "AJCC/UICC 6th pathological N0 Category",
+            "AJCC/UICC 7th pathological N0 Category",
+            "AJCC/UICC 8th pathological N0 Category",
+            "AJCC/UICC 6th pathological N1 Category",
+            "AJCC/UICC 7th pathological N1 Category",
+            "AJCC/UICC 8th pathological N1 Category",
+            "AJCC/UICC 6th pathological N2 Category",
+            "AJCC/UICC 7th pathological N2 Category",
+            "AJCC/UICC 8th pathological N2 Category",
+            "AJCC/UICC 6th pathological N2a Category",
+            "AJCC/UICC 7th pathological N2a Category",
+            "AJCC/UICC 8th pathological N2a Category",
+            "AJCC/UICC 6th pathological N2b Category",
+            "AJCC/UICC 7th pathological N2b Category",
+            "AJCC/UICC 8th pathological N2b Category",
+            "AJCC/UICC 6th pathological N2c Category",
+            "AJCC/UICC 7th pathological N2c Category",
+            "AJCC/UICC 8th pathological N2c Category",
+            "AJCC/UICC 6th pathological N3 Category",
+            "AJCC/UICC 7th pathological N3 Category",
+            "AJCC/UICC 8th pathological N3 Category",
+            "AJCC/UICC 6th pathological N3a Category",
+            "AJCC/UICC 7th pathological N3a Category",
+            "AJCC/UICC 8th pathological N3a Category",
+            "AJCC/UICC 6th pathological N3b Category",
+            "AJCC/UICC 7th pathological N3b Category",
+            "AJCC/UICC 8th pathological N3b Category"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "pM",
+        "variable_description": "Specifies the clinical M",
+        "datatype": "Label",
+        "entity": "Stage",
+        "values": [
+            "AJCC/UICC 6th pathological M0 Category",
+            "AJCC/UICC 7th pathological M0 Category",
+            "AJCC/UICC 8th pathological M0 Category",
+            "AJCC/UICC 6th pathological M1 Category",
+            "AJCC/UICC 7th pathological M1 Category",
+            "AJCC/UICC 8th pathological M1 Category"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Radiological Extra-nodal extension (rEne)",
+        "variable_description": "Describes the presence or absence of radiological signs of extracapsular extension, as defined in the AJCC 8th Ed",
+        "datatype": "Label",
+        "entity": "Stage",
+        "values": [
+            "ENE+"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Staging classification",
+        "variable_description": "Specifies the clinical TNM",
+        "datatype": "Label",
+        "entity": "Stage",
+        "values": [
+            "AJCC/UICC 6th clinical Stage 0",
+            "AJCC/UICC 7th clinical Stage 0",
+            "AJCC/UICC 8th clinical Stage 0",
+            "AJCC/UICC 6th clinical Stage 1",
+            "AJCC/UICC 7th clinical Stage 1",
+            "AJCC/UICC 8th clinical Stage 1",
+            "AJCC/UICC 6th clinical Stage 2",
+            "AJCC/UICC 7th clinical Stage 2",
+            "AJCC/UICC 8th clinical Stage 2",
+            "AJCC/UICC 6th clinical Stage 3",
+            "AJCC/UICC 7th clinical Stage 3",
+            "AJCC/UICC 8th clinical Stage 3",
+            "AJCC/UICC 6th clinical Stage 4",
+            "AJCC/UICC 7th clinical Stage 4",
+            "AJCC/UICC 8th clinical Stage 4",
+            "AJCC/UICC 6th clinical Stage 4A",
+            "AJCC/UICC 7th clinical Stage 4A",
+            "AJCC/UICC 8th clinical Stage 4A",
+            "AJCC/UICC 6th clinical Stage 4B",
+            "AJCC/UICC 7th clinical Stage 4B",
+            "AJCC/UICC 8th clinical Stage 4B",
+            "AJCC/UICC 6th clinical Stage 4C",
+            "AJCC/UICC 7th clinical Stage 4C",
+            "AJCC/UICC 8th clinical Stage 4C",
+            "AJCC/UICC 6th pathological Stage 0",
+            "AJCC/UICC 7th pathological Stage 0",
+            "AJCC/UICC 8th pathological Stage 0",
+            "AJCC/UICC 6th pathological Stage 1",
+            "AJCC/UICC 7th pathological Stage 1",
+            "AJCC/UICC 8th pathological Stage 1",
+            "AJCC/UICC 6th pathological Stage 2",
+            "AJCC/UICC 7th pathological Stage 2",
+            "AJCC/UICC 8th pathological Stage 2",
+            "AJCC/UICC 6th pathological Stage 3",
+            "AJCC/UICC 7th pathological Stage 3",
+            "AJCC/UICC 8th pathological Stage 3",
+            "AJCC/UICC 6th pathological Stage 4",
+            "AJCC/UICC 7th pathological Stage 4",
+            "AJCC/UICC 8th pathological Stage 4",
+            "AJCC/UICC 6th pathological Stage 4A",
+            "AJCC/UICC 7th pathological Stage 4A",
+            "AJCC/UICC 8th pathological Stage 4A",
+            "AJCC/UICC 6th pathological Stage 4B",
+            "AJCC/UICC 7th pathological Stage 4B",
+            "AJCC/UICC 8th pathological Stage 4B",
+            "AJCC/UICC 6th pathological Stage 4C",
+            "AJCC/UICC 7th pathological Stage 4C",
+            "AJCC/UICC 8th pathological Stage 4C"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Soft tissue",
+        "variable_description": "Describes if site of metastasic disease  is soft tissue",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to soft tissues"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "distant lymph node",
+        "variable_description": "Describes if site of metastasic disease  is dystan lymph node",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Distant spread to lymph node"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "lung",
+        "variable_description": "Describes if site of metastasic disease  is lung",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to lung"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "bone",
+        "variable_description": "Describes if site of metastasic disease  is bone",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to bone"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "liver",
+        "variable_description": "Describes if site of metastasic disease  is liver",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to liver"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "pleura",
+        "variable_description": "Describes if site of metastasic disease  is pleura",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to pleura"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "peritoneum",
+        "variable_description": "Describes if site of metastasic disease  is peritoneum",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to peritoneum"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "brain",
+        "variable_description": "Describes if site of metastasic disease  is brain",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to brain"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "other viscera",
+        "variable_description": "Describes if site of metastasic disease  is other viscera",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "unknown",
+        "variable_description": "Describes if site of metastasic disease  is unknown",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Unknown"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Episode Event Reference",
+        "variable_description": "EpisodeEvent element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "Stage",
+        "values": [],
+        "dataset": [
+            "",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Localised",
+        "variable_description": "Is localised",
+        "datatype": "Label",
+        "entity": "Stage",
+        "values": [
+            "Confined disease",
+            "Number of tumor nodules"
+        ],
+        "dataset": [
+            "",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Loco-regional",
+        "variable_description": "Loco-regional information",
+        "datatype": "Label",
+        "entity": "Stage",
+        "values": [
+            "Invasive Disease",
+            "Transit Metastasis with Clinical Confirmation",
+            "Multifocal Tumor"
+        ],
+        "dataset": [
+            "",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Regional nodal metastases",
+        "variable_description": "Describes if regional nodal mestastases happened",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Regional spread to lymph node"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Soft tissue",
+        "variable_description": "Describes if site of metastasic disease  is soft tissue",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to soft tissues"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "distant lymph node",
+        "variable_description": "Describes if site of metastasic disease  is dystan lymph node",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Distant spread to lymph node"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "lung",
+        "variable_description": "Describes if site of metastasic disease  is lung",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to lung"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "metastasisAtBone",
+        "variable_description": "Describes if site of metastasic disease  is bone",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to bone"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "liver",
+        "variable_description": "Describes if site of metastasic disease  is liver",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to liver"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "pleura",
+        "variable_description": "Describes if site of metastasic disease  is pleura",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to pleura"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "peritoneum",
+        "variable_description": "Describes if site of metastasic disease  is peritoneum",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to peritoneum"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "brain",
+        "variable_description": "Describes if site of metastasic disease  is brain",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis to brain"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "other viscera",
+        "variable_description": "Describes if site of metastasic disease  is other viscera",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Metastasis"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "unknown",
+        "variable_description": "Describes if site of metastasic disease  is unknown",
+        "datatype": "Boolean",
+        "entity": "Stage",
+        "values": [
+            "Unknown"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Episode Event Reference",
+        "variable_description": "EpisodeEvent element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "PathologicalReportInfo",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Degree of cytologic Atypia",
+        "variable_description": "morphological index oc cellular dedifferentation. Usually indicated as \"mild, moderate, severe atypia\"",
+        "datatype": "Label",
+        "entity": "PathologicalReportInfo",
+        "values": [
+            "Mild cytologic atypia",
+            "Moderate cytologic atypia",
+            "Severe cytologic atypia"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Pattern of Growth",
+        "variable_description": "Cell morphology, e.g. epitheliod, spindle-cell, pleomorphic, small-ce, etc.",
+        "datatype": "A\nB\nC",
+        "entity": "PathologicalReportInfo",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Mitotic Activity",
+        "variable_description": "Mytotic index, usually reported as \"mytosis XX/10 HPF - high power fields)",
+        "datatype": "Float",
+        "entity": "PathologicalReportInfo",
+        "values": [
+            "mitoses per square millimeter"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Infiltration of surrounding myometrium",
+        "variable_description": "morphological feature regarding the infiltration of the muscular uterine envelope, called myometrium",
+        "datatype": "Boolean",
+        "entity": "PathologicalReportInfo",
+        "values": [
+            "Invasion into the myometrium"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Type of necrosis",
+        "variable_description": "Evidence or not of necrosis, i.e. dead cells within the tumor mass (the type is not reallly relevant, although may be described)",
+        "datatype": "Label",
+        "entity": "PathologicalReportInfo",
+        "values": [
+            "Coagulative necrosis",
+            "Caseous necrosis",
+            "Liquefactive necrosis",
+            "Fat necrosis",
+            "Fibrinoid necrosis"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Expression of ER/PR",
+        "variable_description": "immunohistochemical presence or not of estrogen and progesteron receptors, usually written as ER and PgR + or -, positive or negative",
+        "datatype": "",
+        "entity": "PathologicalReportInfo",
+        "values": [
+            "Estrogen receptor positive tumor",
+            "Estrogen receptor negative neoplasm",
+            "Progesterone receptor positive tumor",
+            "Progesterone receptor negative neoplasm"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "vascular intrusion or invasion",
+        "variable_description": "presence or not of cancer cells within the tumor blood vessels.",
+        "datatype": "Boolean",
+        "entity": "PathologicalReportInfo",
+        "values": [
+            "Vascular invasion by tumor present"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "p16 and p53 expression",
+        "variable_description": "similarly to ER and PgR, immunohistochemistry for p16 and p53 expression.",
+        "datatype": "",
+        "entity": "PathologicalReportInfo",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Episode Event Reference",
+        "variable_description": "EpisodeEvent element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "GeneticTestExpression",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Gene expression analysis performed",
+        "variable_description": "Clarifies whether a gene expression analysis is performed",
+        "datatype": "Boolean",
+        "entity": "GeneticTestExpression",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of Gene expression",
+        "variable_description": "Date of the gene expression analysis",
+        "datatype": "Date",
+        "entity": "GeneticTestExpression",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Gene mutation analysis performed",
+        "variable_description": "Clarifies whether a gene mutation analysis is performed",
+        "datatype": "Boolean",
+        "entity": "GeneticTestExpression",
+        "values": [
+            "Gene mutation analysis"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of Gene mutation",
+        "variable_description": "Date of the gene mutation analysis",
+        "datatype": "Date",
+        "entity": "GeneticTestExpression",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Tests for chromosome translocations performed",
+        "variable_description": "Clarifies whether a tests for chromosome translocations is performed",
+        "datatype": "Boolean",
+        "entity": "GeneticTestExpression",
+        "values": [
+            "Translocation analysis"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of traslocation",
+        "variable_description": "Date of the Chromosome translocation test",
+        "datatype": "Date",
+        "entity": "GeneticTestExpression",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Next generation sequencing (NGS)  performed",
+        "variable_description": "Clarifies whether a NGS analysis is performed",
+        "datatype": "Boolean",
+        "entity": "GeneticTestExpression",
+        "values": [
+            "Analysis using chain termination sequencing technique"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of NGS",
+        "variable_description": "Date of the NGS analysis",
+        "datatype": "Date",
+        "entity": "GeneticTestExpression",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Polymerase chain reaction\u00a0(PCR)\u00a0test performed",
+        "variable_description": "Clarifies whether a PCR analysis is performed",
+        "datatype": "Boolean",
+        "entity": "GeneticTestExpression",
+        "values": [
+            "Quantitative PCR analysis"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of PCR",
+        "variable_description": "Date of the PCR analysis",
+        "datatype": "Date",
+        "entity": "GeneticTestExpression",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Immunohistochemistry  performed",
+        "variable_description": "Clarifies whether a immunohiostochemestry analysis is performed",
+        "datatype": "Boolean",
+        "entity": "GeneticTestExpression",
+        "values": [
+            "Immunohistochemistry procedure"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of immunohistochemistry",
+        "variable_description": "Date of the immunohiostochemestry analysis",
+        "datatype": "Date",
+        "entity": "GeneticTestExpression",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Circulating Tumour DNA (ctDNA) performed",
+        "variable_description": "Clarifies whether a ctDNA analysis is performed",
+        "datatype": "Boolean",
+        "entity": "GeneticTestExpression",
+        "values": [
+            "Circulating Tumor DNA"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of ctDNA",
+        "variable_description": "Date of the ctDNA analysis",
+        "datatype": "Date",
+        "entity": "GeneticTestExpression",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Episode Event reference",
+        "variable_description": "EpisodeEvent element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "Surgery",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Surgery type",
+        "variable_description": "Primary surgery/re-excision (check with unplanned or excisional biopsy)\n",
+        "datatype": "Label",
+        "entity": "Surgery",
+        "values": [
+            "Surgical procedure",
+            "Local excision",
+            "Amputation",
+            "Limb operation"
+        ],
+        "dataset": [
+            "",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Surgery Hospital",
+        "variable_description": "Whether or not a surgical procedure was performed and whether it was performed at the registering hospital or another hospital. Diagnostic procedures (biopsy) are not included.",
+        "datatype": "String",
+        "entity": "Surgery",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of surgery",
+        "variable_description": "Date of the surgery for primary tumor with or without neck surgery",
+        "datatype": "Date",
+        "entity": "Surgery",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Surgery intention",
+        "variable_description": "Palliative: surgery performed with the intent of improving quality of life or relieving symptoms caused by advanced disease.\nCurative: surgery performed with the intend of oncologic cure, regardless of its result (R0 / R1/R2)",
+        "datatype": "Label",
+        "entity": "Surgery",
+        "values": [
+            "Palliative",
+            "Curative procedure intent"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Type of surgical approach on Tumour",
+        "variable_description": "Describes the approach to tumor resection whether it includes skin incision (extenal or open ),  or it 's aproached through a natural orifice (Transnasal/transorbital/transoral) or if the approach combines two or more of the previous ones",
+        "datatype": "Label",
+        "entity": "Surgery",
+        "values": [
+            "External/Open",
+            "Transnasal",
+            "Transorbital",
+            "Transoral",
+            "Craniofacial"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Margins after surgery",
+        "variable_description": "The R0 (\u201cno residual rumor\u201d) category applies only to cases in which residual tumor cannot be detected by conventional diagnostic methods. A more exact definition would read \u201cno detectable residual tumor.\u201dThis category corresponds to surgical resection for cure.\nThe R1 category is reserved exclusively for cases in which residual tumor is found by histologic examination. This category may apply to biopsy sampling of the regional tissue at the site of resection or of a distant site at the time of surgery. It also applies to microscopic examination of the resection margins of the surgical resection specimen by the pathologist.\nR2 applies to cases with macroscopically visible residual tumor that is detected either clinically or pathologically.",
+        "datatype": "Label",
+        "entity": "Surgery",
+        "values": [
+            "R0: No residual tumor",
+            "R1: Microscopic residual tumor",
+            "R2: Macroscopic residual tumor"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Tumor rupture",
+        "variable_description": "Tumor rupture Yes/No",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Tumor Rupture"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Surgical specimen Mitotic count",
+        "variable_description": "Surgical specimen Mitotic count",
+        "datatype": "Float (as_value)",
+        "entity": "Surgery",
+        "values": [
+            "Number of mitoses per 10 high power fields"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Surgical specimen grading only in untreated tumours",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Surgery",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Reconstruction",
+        "variable_description": "Local flap / regional pedicled flap / free flap",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Yes"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Neck surgery",
+        "variable_description": "Describes whether a surgical procedure to treat and address the neck was performed or not.",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Yes"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of Neck surgery",
+        "variable_description": "Date of the surgery on the neck",
+        "datatype": "Date",
+        "entity": "Surgery",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Laterality of the dissection",
+        "variable_description": "Describes laterality of the neck surgical procedure: \nIpsilateral when only  the neck ipsilateral to the tumor has been treated\nContralateral when only the neck contralateral to the tumor has been treated \nBilateral: when both sides of the neck have been treated",
+        "datatype": "Label",
+        "entity": "Surgery",
+        "values": [
+            "Ipsilateral",
+            "Bilateral Sampling",
+            "Controlateral"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Surgery on M",
+        "variable_description": "Describes whether surgery is performed to treat the Metastasis",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Yes"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Date of surgery on M",
+        "variable_description": "Date of the surgery on the metastasis",
+        "datatype": "Date",
+        "entity": "Surgery",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Site of surgery on metastasis_soft tissue",
+        "variable_description": "Describes if site of surgery on metastasis  is soft tissue",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Metastasis to soft tissues"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Site of surgery on metastasis_distant lymph nodes",
+        "variable_description": "Describes if site of surgery on metastasis  is dystan lymph node",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Distant spread to lymph node"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Site of surgery on metastasis_lung",
+        "variable_description": "Describes if site of surgery on metastasis  is lung",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Metastasis to lung"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Site of surgery on metastasis_bone",
+        "variable_description": "Describes if site of surgery on metastasis  is bone",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Metastasis to bone"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Site of surgery on metastasis_liver",
+        "variable_description": "Describes if site of surgery on metastasis  is liver",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Metastasis to liver"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Site of surgery on metastasis_pleura",
+        "variable_description": "Describes if site of surgery on metastasis  is pleura",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Metastasis to pleura"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Site of surgery on metastasis_peritoneum",
+        "variable_description": "Describes if site of surgery on metastasis  is peritoneum",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Metastasis to peritoneum"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Site of surgery on metastasis_brain",
+        "variable_description": "Describes if site of surgery on metastasis  is brain",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Metastasis to brain"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Site of surgery on metastasis_other viscera",
+        "variable_description": "Describes if site of surgery on metastasis  is other viscera",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Metastasis"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Site of surgery on metastasis_unknown",
+        "variable_description": "Describes if site of surgery on metastasis  is unknown",
+        "datatype": "Boolean",
+        "entity": "Surgery",
+        "values": [
+            "Unknown"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Surgical complications (Clavien-Dindo Classification)",
+        "variable_description": "Describes presence and grade of complications after a surgical procedure,",
+        "datatype": "Label",
+        "entity": "Surgery",
+        "values": [
+            "Absent"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Episode Event reference",
+        "variable_description": "EpisodeEvent element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "SystemicTreatment",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "SystemicTreatment Hospital",
+        "variable_description": "In which hospital was the SystemicTreatment performed",
+        "datatype": "String",
+        "entity": "SystemicTreatment",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "type of systemic treatment",
+        "variable_description": "Select the type of systemic treatment administered. It is possible to directly select the single treatment as appropriate.",
+        "datatype": "Label",
+        "entity": "SystemicTreatment",
+        "values": [
+            "Chemotherapy",
+            "Immunotherapy"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Intent",
+        "variable_description": "Clarifies the reasons why systemic therapy is administered\n\u2022 Curative chemotherapy is chemotherapy administered with the goal of achieving a complete remission and preventing the recurrence of cancer. \n\u2022 Palliative chemotherapy refers to any chemotherapy administration that is not curative but administered simply to decrease tumor load and increase life expectancy. It has been defined also as \u201c\u2026treatment in circumstances where the impact of intervention is insufficient to result in major survival advantage, but does affect improvement in terms of tumor\u2010related symptoms\u2026\u201d\n",
+        "datatype": "Label",
+        "entity": "SystemicTreatment",
+        "values": [
+            "Palliative",
+            "Curative procedure intent"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Setting",
+        "variable_description": "clarifies the context / how the therapy was administered alone or in conjunction with other treatments\n\u2022 Neoadjuvant: treatment given as a first step to shrink a tumor before the main treatment, which is usually surgery, is given. Examples of neoadjuvant therapy include chemotherapy, radiation therapy, and hormone therapy. It is a type of induction therapy.\n\u2022 Adjuvant: additional cancer treatment given after the primary treatment to lower the risk that the cancer will come back. Adjuvant therapy may include chemotherapy, radiation therapy, hormone therapy, targeted therapy, or biological therapy.\n\u2022 Concomitant/concurrent: A treatment that is given at the same time as another (es. Chemotherapy + radiotherapy).\n",
+        "datatype": "Label",
+        "entity": "SystemicTreatment",
+        "values": [
+            "Adjuvant"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Chemotherapy info",
+        "variable_description": "Information for chemotherapy",
+        "datatype": "Label",
+        "entity": "SystemicTreatment",
+        "values": [
+            "Preoperative",
+            "Postoperative period",
+            "Hyperthermic intraperitoneal chemotherapy",
+            "Therapeutic"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Start date systemic treatment",
+        "variable_description": "Specifies when systemic treatment begins",
+        "datatype": "Date",
+        "entity": "SystemicTreatment",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "End date systemic treatment",
+        "variable_description": "Specifies when systemic treatment ends",
+        "datatype": "Date",
+        "entity": "SystemicTreatment",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Number of cycles/ administrations",
+        "variable_description": "clarifies how many times the treatment was administered. A cycle of treatment is a period of treatment followed by a period of rest (no treatment). For example, treatment given for one week followed by three weeks of rest is one cycle of treatment. A cycle can be repeated multiple times.",
+        "datatype": "Float",
+        "entity": "SystemicTreatment",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Start date regimen changed",
+        "variable_description": "specifies when the new systemic treatment begins, if a combination please specify the start of the first drug",
+        "datatype": "Date",
+        "entity": "SystemicTreatment",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "End date regimen changed",
+        "variable_description": "specifies when the new  systemic treatment ends,if a combination please specify the end of the last drug",
+        "datatype": "Date",
+        "entity": "SystemicTreatment",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Reason for end of treatment",
+        "variable_description": "Clarifies the reasons why the treatment ended or was interrupted",
+        "datatype": "Label",
+        "entity": "SystemicTreatment",
+        "values": [
+            "Treatment completed",
+            "Toxicity",
+            "Procedure discontinued by patient",
+            "Death"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Treatment response (based on imaging alone; no recist or other criteria)",
+        "variable_description": "Measures how well a cancer patient responds to treatment. RECIST criteria should not be applied. The definition of Complete response; Partial response; Stable disease; Progression, should be based on the clinical judgement based on imaging.  Only when setting=neoadiuvant or  palliative",
+        "datatype": "Label",
+        "entity": "SystemicTreatment",
+        "values": [
+            "Complete Remission",
+            "Partial Remission",
+            "Stable Disease",
+            "Progression"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Episode Event reference",
+        "variable_description": "EpisodeEvent element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Radiotherapy Hospital",
+        "variable_description": "Whether it was performed at the registering hospital or another hospital.",
+        "datatype": "String",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Intent",
+        "variable_description": "Radiotherapy intent refers to whether the intention of treatment is to cure the patient or to treat symptoms and palliate",
+        "datatype": "Label",
+        "entity": "Radiotherapy",
+        "values": [
+            "Palliative",
+            "Curative procedure intent"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Setting",
+        "variable_description": "Whether radiotherapy is delivered as the main treatment modality (definitive) or if it is delivered before or after another treatment such as surgery",
+        "datatype": "Label",
+        "entity": "Radiotherapy",
+        "values": [
+            "Postoperative"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Beam quality",
+        "variable_description": "Describes the type of radiation therapy given. If external beam, please specify if delivered with Photons (most common), electrons, carbon, or protons.",
+        "datatype": "Label",
+        "entity": "Radiotherapy",
+        "values": [
+            "External beam RT Photons",
+            "External beam RT Electrons",
+            "External beam radiation therapy using carbon ions",
+            "External Beam RT Protons",
+            "Brachytherapy interstitial endocavitary contact",
+            "Radionuclide therapy",
+            "Boron neutron capture Therapy"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Other; specify",
+        "variable_description": "",
+        "datatype": "String",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Treatment technique",
+        "variable_description": "Refers to the type of radiotherapy treatment delivered",
+        "datatype": "Label",
+        "entity": "Radiotherapy",
+        "values": [
+            "2D",
+            "Three dimensional external beam radiation therapy",
+            "IMRT CONVENTIONAL",
+            "VMAT",
+            "Tomotherapy",
+            "SBRT",
+            "Ultra high dose rate radiotherapy"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Total Dose (TD) Gy",
+        "variable_description": "Refers to the total dose delivered to the patient in Gy",
+        "datatype": "Float",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Number of fractions",
+        "variable_description": "Refers to the total number of fractions delivered to the patient",
+        "datatype": "Float",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Adaptive RT",
+        "variable_description": "Refers to whether treatment planning was changed or adapted after the initial radiation plan was developed. This could be due to a change in the patient\u2019s anatomy or if the tumor changed in size.",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [
+            "Yes"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "IGRT  (image guide radiotherapy)",
+        "variable_description": "Refers to whether image guided radiotherapy was used for delivery of radiotherapy and to check the patient set up. This includes MV, KV, or Cone Beam CT imaging.",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [
+            "Yes"
+        ],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Start date",
+        "variable_description": "Date when  the first radiation treatment was delivered",
+        "datatype": "Date",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "End  date",
+        "variable_description": "Date when the last radiation treatment ended",
+        "datatype": "Date",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Primary only",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Neck only",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Primary and Ipsilateral Neck",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Primary and Bilateral Neck",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Distant Metastasis",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N"
+        ]
+    },
+    {
+        "variable_name": "Lung",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Mediastinum",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Bone",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Soft Tissue",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Liver",
+        "variable_description": "",
+        "datatype": "Boolean",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Treatment Completed as Planned?",
+        "variable_description": "Refers to whether patient completed all treatment as planned or if it had to be interrupted due to several reasons including toxicity, a co-morbidity preventing the delivery of radiation (pulmonary embolism, failure to thrive during RT), death due to progression of the cancer or patient decision",
+        "datatype": "Label",
+        "entity": "Radiotherapy",
+        "values": [
+            "Toxicity",
+            "Death"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Regional deep hyperthemia",
+        "variable_description": "",
+        "datatype": "Label",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "RDH_startdate",
+        "variable_description": "",
+        "datatype": "Date",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "RDH_enddate",
+        "variable_description": "",
+        "datatype": "Date",
+        "entity": "Radiotherapy",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Treatment response",
+        "variable_description": "Clinical treatment response for the radiotherapy",
+        "datatype": "Label",
+        "entity": "Radiotherapy",
+        "values": [
+            "Complete Remission",
+            "Partial Remission",
+            "Stable Disease",
+            "Progression"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Episode Event reference",
+        "variable_description": "EpisodeEvent element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "OtherLocalTreatment",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "OtherLocalTreatment Hospital",
+        "variable_description": "In which hospital was the Other Local Treatment performed",
+        "datatype": "String",
+        "entity": "OtherLocalTreatment",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Type of local treatment",
+        "variable_description": "Which type of local treatment is applied",
+        "datatype": "Label",
+        "entity": "OtherLocalTreatment",
+        "values": [
+            "Hypertermia treatment",
+            "Other"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Start date",
+        "variable_description": "Date when local treatment started",
+        "datatype": "Date",
+        "entity": "OtherLocalTreatment",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "End  date",
+        "variable_description": "Date when local treatment ended",
+        "datatype": "Date",
+        "entity": "OtherLocalTreatment",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Treatment response",
+        "variable_description": "Measures how well a cancer patient responds to treatment. RECIST criteria should not be applied. The definition of Complete response; Partial response; Stable disease; Progression, should be based on the clinical judgement based on imaging.  Only when setting=neoadiuvant or  palliative",
+        "datatype": "Label",
+        "entity": "OtherLocalTreatment",
+        "values": [
+            "Complete Remission",
+            "Partial Remission",
+            "Stable Disease",
+            "Progression"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Episode Event reference",
+        "variable_description": "EpisodeEvent element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "IsolatedLimbPerfusion",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Isolated Limb perfusion Hospital",
+        "variable_description": "In which hospital was the Isolated Limb perfusion performed",
+        "datatype": "String",
+        "entity": "IsolatedLimbPerfusion",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Start date",
+        "variable_description": "Date when local treatment started",
+        "datatype": "Date",
+        "entity": "IsolatedLimbPerfusion",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "End  date",
+        "variable_description": "Date when local treatment ended",
+        "datatype": "Date",
+        "entity": "IsolatedLimbPerfusion",
+        "values": [],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Treatment response",
+        "variable_description": "Measures how well a cancer patient responds to treatment. RECIST criteria should not be applied. The definition of Complete response; Partial response; Stable disease; Progression, should be based on the clinical judgement based on imaging.  Only when setting=neoadiuvant or  palliative",
+        "datatype": "Label",
+        "entity": "IsolatedLimbPerfusion",
+        "values": [
+            "Complete Remission",
+            "Partial Remission",
+            "Stable Disease",
+            "Progression"
+        ],
+        "dataset": [
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "SystemicTreatment reference",
+        "variable_description": "Systemic treatment reference that will apply the drug to the patient. ",
+        "datatype": "ElementReference",
+        "entity": "DrugsForTreatments",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "OtherLocalTreatment reference",
+        "variable_description": "Other type of local treatment reference that will apply the drug to the patient.",
+        "datatype": "ElementReference",
+        "entity": "DrugsForTreatments",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "IsolatedLimbPerfusion reference",
+        "variable_description": "Isolated Limb Perfusion reference that will apply the drug to the patient.",
+        "datatype": "ElementReference",
+        "entity": "DrugsForTreatments",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Drug",
+        "variable_description": "A list of drugs given to a patient for a specific treatment.",
+        "datatype": "Label",
+        "entity": "DrugsForTreatments",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Episode Event Reference",
+        "variable_description": "EpisodeEvent element containing the data regarding the patient's cancer",
+        "datatype": "ElementReference",
+        "entity": "ClinicalStage",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Treatment response (based on imaging alone; no recist or other criteria)",
+        "variable_description": "It refers to the response to the entire therapy administered to the patient. It measures how well a cancer patient responds to treatment. RECIST criteria should not be applied. The definition of Complete response; Partial response; Stable disease; Progression, should be based on the clinical judgement based on imaging.",
+        "datatype": "Label",
+        "entity": "TreatmentResponse",
+        "values": [
+            "Complete Remission",
+            "Partial Remission",
+            "Stable Disease",
+            "Progression"
+        ],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    },
+    {
+        "variable_name": "Treatment response defined/done",
+        "variable_description": "refers to whether overall treatment reponse was assessed at the registering hospital or another.",
+        "datatype": "String",
+        "entity": "TreatmentResponse",
+        "values": [],
+        "dataset": [
+            "H&N",
+            "Sarc."
+        ]
+    }
+]

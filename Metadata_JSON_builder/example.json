@@ -1,0 +1,39 @@
+[
+  {
+    "variable_name": "Sex",
+    "variable_description": "Describes biological sex as recorded in the patient's identity document or in the hospital record. In the absence of documentation, the one declared by the patient will be recorded",
+    "datatype": "Code",
+    "values": ["8507", "8532"]
+  },
+  {
+    "variable_name": "Type of Biopsy (Diagnosis)",
+    "variable_description": "Type of biopsy performed to the patient",
+    "datatype": "Code",
+    "values": [
+      "Fine needle biopsy - 4171863",
+      "Core needle biopsy - 4321878",
+      "Incisional biopsy - 4321986",
+      "Excisional biopsy - 4228202",
+      "Excision - 4279903"
+    ]
+  },
+
+  {
+    "variable_name": "Tumor Size",
+    "variable_description": "Specifies the tumor size in centimeters (the longest diameter; longest dimension between pre operatory imaging and pathological specimen) cm ",
+    "datatype": "Number",
+    "values": []
+  },
+
+  {
+    "variable_name": "Disease status",
+    "variable_description": "Update to the disease status",
+    "datatype": "Code",
+    "values": [
+      "Complete Remission - 32946",
+      "Partial Remission - 32947",
+      "Progression - 32949",
+      "Stable Disease - 32948"
+    ]
+  }
+]
