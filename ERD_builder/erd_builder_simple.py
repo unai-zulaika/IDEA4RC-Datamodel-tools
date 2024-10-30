@@ -41,7 +41,7 @@ caption {
 
 arrow {
   FontSize 18
-  Padding 90
+  Padding 50
   Margin 50
 }
 
@@ -55,11 +55,23 @@ title IDEA4RC DataModel
 hide circle
 
 ' avoid problems with angled crows feet
-skinparam linetype ortho
-skinparam padding 20
-skinparam nodesep 200
-skinparam ranksep 300\n"""
+skinparam linetype ortho\n"""
 
+LEGEND_STRING = """legend
+Text color:
+Blue -> H&N, Sarc. 
+Red -> H&N
+Green -> Sarc.
+---------
+Shapes:
+red -> Mandatory
+yellow -> Recommended
+green -> Optional
+---------
+Each variable (and entity if needed) is related to the datamodels,
+HN means Head and Neck
+S means Sarcoma
+end legend"""
 
 RELATION_STRING = """p "1" ||--|{ "1..N" hpr
 hd "1" ||--|{ "1..N" hpr
@@ -68,11 +80,10 @@ p "1" ||--o{ "0..N" ce
 p "1" ||--o{ "0..N" pfu
 
 ce "1" ||--|{ "1..N" ee
-ce "1" ||--o| "0..1" ps
-ce "1" ||--o| "0..1" cs
 
+ee "1" ||--o| "0..1" s
 ee "1" ||--o{ "0..N" r
-ee "1" ||--o{ "0..N" s
+ee "1" ||--o{ "0..N" su
 ee "1" ||--o{ "0..N" st
 ee "1" ||--o{ "0..N" olt
 ee "1" ||--o{ "0..N" gte
@@ -84,7 +95,7 @@ note as N1
 The relations to AdverseEvent are a XOR
 end note
 
-s "1" ||--o{ "0..N" ae
+su "1" ||--o{ "0..N" ae
 'note on link: XOR
 st "0..N" ||--o{ "1" ae
 'note on link: XOR
@@ -135,7 +146,8 @@ def list_variable(variables, required, dataset):
 #PK | {"TBD"}
 #    --
 def create_entity_string(title, short_name, variables, required, dataset):
-    STRING = f"""object \"{title}\" as {short_name.lower()}"""
+    STRING = f"""object \"{title}\" as {short_name.lower() if title != "Surgery" else "su"} {{
+    }}"""
     return STRING
 
 
@@ -175,6 +187,8 @@ with open(OUTPUT_FILEPATH, "w") as f:
 
         f.write("\n")
     f.write(RELATION_STRING)
+    f.write("\n")
+    f.write(LEGEND_STRING)
     f.write("\n")
     f.write("@enduml")
     f.close()

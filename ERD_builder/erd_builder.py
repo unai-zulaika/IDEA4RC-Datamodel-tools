@@ -80,13 +80,19 @@ p "1" ||--o{ "0..N" ce
 p "1" ||--o{ "0..N" pfu
 
 ce "1" ||--|{ "1..N" ee
-ce "1" ||--o| "0..1" ps
-ce "1" ||--o| "0..1" cs
+
+ee "1" ||--o| "0..1" hs
+ee "1" ||--o| "0..1" ss
+
+st "1" ||--|{ "0..N" dft
+ilp "1" ||--|{ "0..N" dft
+olt "1" ||--|{ "0..N" dft
 
 ee "1" ||--o{ "0..N" r
-ee "1" ||--o{ "0..N" s
+ee "1" ||--o{ "0..N" su
 ee "1" ||--o{ "0..N" st
 ee "1" ||--o{ "0..N" olt
+ee "1" ||--o{ "0..N" ilp
 ee "1" ||--o{ "0..N" gte
 ee "1" ||--o{ "0..N" tr
 ee "1" ||--o{ "0..N" pri
@@ -96,7 +102,7 @@ note as N1
 The relations to AdverseEvent are a XOR
 end note
 
-s "1" ||--o{ "0..N" ae
+su "1" ||--o{ "0..N" ae
 'note on link: XOR
 st "0..N" ||--o{ "1" ae
 'note on link: XOR
@@ -107,7 +113,7 @@ s .. N1
 st .. N1
 r .. N1"""
 
-SHEETS_TO_PROCESS = list(range(5, 22))
+SHEETS_TO_PROCESS = list(range(5, 23))
 
 
 def check_dataset(dataset):
@@ -147,7 +153,7 @@ def list_variable(variables, required, dataset):
 #PK | {"TBD"}
 #    --
 def create_entity_string(title, short_name, variables, required, dataset):
-    STRING = f"""object \"{title}\" as {short_name.lower()} {{
+    STRING = f"""object \"{title}\" as {short_name.lower() if title != "Surgery" else "su"} {{
     {list_variable(variables, required, dataset)}
     }}"""
     return STRING
