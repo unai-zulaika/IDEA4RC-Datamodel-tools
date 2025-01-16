@@ -2,7 +2,8 @@ import pandas as pd
 from tqdm import tqdm
 import random
 
-sheet_id = "1Vw1Dr2K4oG__cDQTutGaJhZvGUvQTLwc4qWreP6qMSs"
+# sheet_id = "1Vw1Dr2K4oG__cDQTutGaJhZvGUvQTLwc4qWreP6qMSs"
+sheet_id = "1ANErBpHQAW6ngn1kq-a7rPpeTosG-z2PHnwfUT6IUKI"
 
 INPUT_FILEPATH = "IDEA4RC_DM_V1.xlsx"
 OUTPUT_FILEPATH = "output.wsd"
@@ -76,26 +77,38 @@ end legend"""
 RELATION_STRING = """p "1" ||--|{ "1..N" hpr
 hd "1" ||--|{ "1..N" hpr
 
-p "1" ||--o{ "0..N" ce
+p "1" ||--o{ "1..N" ce
 p "1" ||--o{ "0..N" pfu
 
-ce "1" ||--|{ "1..N" ee
+ce "1" ||--|{ "0..N" ee
+ce "1" ||--|{ "1..N" d
 
-ee "1" ||--o| "0..1" hs
-ee "1" ||--o| "0..1" ss
+d "1" ||--o| "0..1" cs
+d "1" ||--o| "0..1" ps
 
 st "1" ||--|{ "0..N" dft
 ilp "1" ||--|{ "0..N" dft
-olt "1" ||--|{ "0..N" dft
+ilp "1" ||--|{ "0..N" rdh
 
 ee "1" ||--o{ "0..N" r
 ee "1" ||--o{ "0..N" su
 ee "1" ||--o{ "0..N" st
-ee "1" ||--o{ "0..N" olt
 ee "1" ||--o{ "0..N" ilp
 ee "1" ||--o{ "0..N" gte
-ee "1" ||--o{ "0..N" tr
-ee "1" ||--o{ "0..N" pri
+ee "1" ||--o{ "0..N" rdh
+
+ee "1" ||--o{ "0..1" d
+
+ee "1" ||--o{ "0..1" otr
+
+d "1" ||--o{ "0..N" r
+d "1" ||--o{ "0..N" su
+d "1" ||--o{ "0..N" st
+d "1" ||--o{ "0..N" ilp
+d "1" ||--o{ "0..N" gte
+d "1" ||--o{ "0..N" rdh
+
+d "1" ||--o{ "0..1" otr
 
 
 note as N1
@@ -109,11 +122,11 @@ st "0..N" ||--o{ "1" ae
 r "1" ||--o{ "0..N" ae
 'note on link: XOR
 
-s .. N1
+su .. N1
 st .. N1
 r .. N1"""
 
-SHEETS_TO_PROCESS = list(range(5, 23))
+SHEETS_TO_PROCESS = list(range(8, 27))
 
 
 def check_dataset(dataset):
@@ -142,7 +155,7 @@ def check_required(required):
 def list_variable(variables, required, dataset):
     STRING = f""""""
     for i, variable in enumerate(variables):
-        if pd.isna(variable): # na are grouping variables, we need to ignore them
+        if pd.isna(variable):  # na are grouping variables, we need to ignore them
             continue
         STRING = (
             STRING
@@ -150,7 +163,8 @@ def list_variable(variables, required, dataset):
         )
     return STRING
 
-#PK | {"TBD"}
+
+# PK | {"TBD"}
 #    --
 def create_entity_string(title, short_name, variables, required, dataset):
     STRING = f"""object \"{title}\" as {short_name.lower() if title != "Surgery" else "su"} {{
