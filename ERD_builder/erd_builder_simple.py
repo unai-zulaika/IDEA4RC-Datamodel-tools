@@ -106,7 +106,7 @@ s .. N1
 st .. N1
 r .. N1"""
 
-SHEETS_TO_PROCESS = list(range(3, 19))
+SHEETS_TO_PROCESS = list(range(5, 22))
 
 
 def check_dataset(dataset):

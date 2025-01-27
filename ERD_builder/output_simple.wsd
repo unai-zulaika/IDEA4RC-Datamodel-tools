@@ -80,6 +80,23 @@ object "TreatmentResponse" as tr {
     }
 object "AdverseEvent" as ae {
     }
+object "Patient" as p
+object "PatientFollowUp" as pfu
+object "HospitalData" as hd
+object "HospitalPatientRecords" as hpr
+object "CancerEpisode" as ce
+object "EpisodeEvent" as ee
+object "HnStage" as hs
+object "SarcomaStage" as ss
+object "PathologicalReportInfo" as pri
+object "GeneticTestExpression" as gte
+object "Surgery" as s
+object "SystemicTreatment" as st
+object "Radiotherapy" as r
+object "OtherLocalTreatment" as olt
+object "IsolatedLimbPerfusion" as ilp
+object "DrugsForTreatments" as dft
+object "TreatmentResponse" as tr
 p "1" ||--|{ "1..N" hpr
 hd "1" ||--|{ "1..N" hpr
 
