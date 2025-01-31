@@ -97,8 +97,6 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
             entity = "Diagnosis"
             vname = "Topography"
 
-        entity = re.sub(r"(?<!^)(?=[A-Z])", " ", entity).upper()
-
         if pd.isna(vname):
             vname = ""
         if pd.isna(description):
@@ -133,12 +131,12 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
 
         variable_json = {
             "variable_name": vname,
-            "variable_description": description,
-            "datatype": datatype,
-            "entity": entity,
-            "values": values,
-            "dataset": datasets,
             "centers": centers,
+            # "variable_description": description,
+            # "datatype": datatype,
+            # "entity": entity,
+            # "values": values,
+            # "dataset": datasets,
         }
 
         variables_list.append(variable_json)
@@ -148,5 +146,5 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
 json_object = json.dumps(variables_list, indent=4)
 
 # Writing to sample.json
-with open("metadata.json", "w") as outfile:
+with open("metadata_quality.json", "w") as outfile:
     outfile.write(json_object)

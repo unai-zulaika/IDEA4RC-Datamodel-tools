@@ -33,10 +33,17 @@ xls = pd.ExcelFile(
     f"https://docs.google.com/spreadsheets/export?id={sheet_id}&format=xlsx"
 )
 
-variables_list = []
+final_json = {
+    "variables": {},
+    "centers": {},
+    "cancer_types": {"head_and_neck": "ct_1", "sarcoma": "ct_2"},
+}
+
+for i, center in enumerate(CENTERS):
+    final_json["centers"][center] = "center_" + str(i)
 
 # let's process each sheet
-
+n = 0
 for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
     # read each sheet
     dataframe = pd.read_excel(xls, sheet_name=sheet_number)
@@ -49,6 +56,7 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
         object_property,
         datatype,
         dataset,
+        identifier,
     ) in dataframe[
         [
             "ObjectPropertyLabelEN",
@@ -58,6 +66,7 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
             "ObjectProperty",
             "FormatConceptualDomain",
             "Dataset",
+            "DataElementConcept",
         ]
     ].itertuples(
         index=False
@@ -138,15 +147,16 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
             "entity": entity,
             "values": values,
             "dataset": datasets,
-            "centers": centers,
+            "id": "v_" + str(n),
+            # "centers": centers,
         }
-
-        variables_list.append(variable_json)
+        n += 1
+        final_json["variables"][identifier] = variable_json
 
 
 # Serializing json
-json_object = json.dumps(variables_list, indent=4)
+json_object = json.dumps(final_json, indent=4)
 
 # Writing to sample.json
-with open("metadata.json", "w") as outfile:
+with open("governance_metadata.json", "w") as outfile:
     outfile.write(json_object)
