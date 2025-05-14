@@ -112,9 +112,13 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
         centers = []
         for center in CENTERS:
             center_data = {
-                "availability_d": random.choice([True, False]),
-                "availability_p": random.choice([True, False]),
-                "availability_r": random.choice([True, False]),
+                "availability_d": (
+                    random.choice(["True", "False", "Not available"])
+                    if vname not in ["Sex", "Race", "Birth date", "Cancer start date"]
+                    else "True"
+                ),
+                "availability_p": random.choice(["True", "False", "Not available"]),
+                "availability_r": random.choice(["True", "False", "Not available"]),
                 "years": "2019-2021",
                 "datasource_name": "National Registry",
                 "datasource_information": "lorem ipsum",

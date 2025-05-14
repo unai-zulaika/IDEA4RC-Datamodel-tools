@@ -49,6 +49,7 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
         object_property,
         datatype,
         dataset,
+        dataelementconcept,
     ) in dataframe[
         [
             "ObjectPropertyLabelEN",
@@ -58,6 +59,7 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
             "ObjectProperty",
             "FormatConceptualDomain",
             "Dataset",
+            "DataElementConcept",
         ]
     ].itertuples(
         index=False
@@ -114,9 +116,13 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
         centers = []
         for center in CENTERS:
             center_data = {
-                "availability_d": random.choice([True, False]),
-                "availability_p": random.choice([True, False]),
-                "availability_r": random.choice([True, False]),
+                "availability_d": (
+                    random.choice(["True", "False", "Not available"])
+                    if vname not in ["Sex", "Race", "Birth Year", "Cancer start date"]
+                    else "True"
+                ),
+                "availability_p": random.choice(["True", "False", "Not available"]),
+                "availability_r": random.choice(["True", "False", "Not available"]),
                 "years": "2019-2021",
                 "datasource_name": "National Registry",
                 "datasource_information": "lorem ipsum",
@@ -133,6 +139,7 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
 
         variable_json = {
             "variable_name": vname,
+            "variable_id": dataelementconcept,
             "variable_description": description,
             "datatype": datatype,
             "entity": entity,
