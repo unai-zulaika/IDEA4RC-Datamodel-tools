@@ -1,0 +1,21 @@
+{
+    "DrugsForTreatments": "",
+    "SystemicTreatment": "",
+    "IsolatedLimbPerfusion": "",
+    "GeneticTestExpression": "",
+    "Radiotherapy": "",
+    "Surgery": "",
+    "OtherLocalTreatment": "",
+    "Patient": "",
+    "AdverseEvent": "",
+    "CancerEpisode": "",
+    "ClinicalStage": "",
+    "PatientFollowUp": "",
+    "PathologicalStage": "",
+    "Diagnosis": "",
+    "HospitalPatientRecords": "",
+    "DiseaseExtent": "",
+    "HospitalData": "",
+    "EpisodeEvent": "",
+    "TreatmentResponse": ""
+}
