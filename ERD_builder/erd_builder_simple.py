@@ -106,7 +106,7 @@ s .. N1
 st .. N1
 r .. N1"""
 
-SHEETS_TO_PROCESS = list(range(5, 22))
+SHEETS_TO_PROCESS = list(range(8, 27))
 
 
 def check_dataset(dataset):
@@ -135,7 +135,7 @@ def check_required(required):
 def list_variable(variables, required, dataset):
     STRING = f""""""
     for i, variable in enumerate(variables):
-        if pd.isna(variable): # na are grouping variables, we need to ignore them
+        if pd.isna(variable):  # na are grouping variables, we need to ignore them
             continue
         STRING = (
             STRING
@@ -143,7 +143,8 @@ def list_variable(variables, required, dataset):
         )
     return STRING
 
-#PK | {"TBD"}
+
+# PK | {"TBD"}
 #    --
 def create_entity_string(title, short_name, variables, required, dataset):
     STRING = f"""object \"{title}\" as {short_name.lower() if title != "Surgery" else "su"} {{

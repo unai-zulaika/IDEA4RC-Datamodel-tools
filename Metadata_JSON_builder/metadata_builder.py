@@ -2,7 +2,6 @@ import pandas as pd
 from tqdm import tqdm
 import json
 import re
-import numpy as np
 import random
 
 sheet_id = "1ANErBpHQAW6ngn1kq-a7rPpeTosG-z2PHnwfUT6IUKI"
@@ -157,3 +156,14 @@ json_object = json.dumps(variables_list, indent=4)
 # Writing to sample.json
 with open("metadata.json", "w") as outfile:
     outfile.write(json_object)
+
+
+# now empty the centres
+for variable in variables_list:
+    for center in variable["centers"]:
+        for center_name, center_data in center.items():
+            for key in center_data.keys():
+                center_data[key] = ""
+
+with open("empty_metadata.json", "w") as outfile:
+    json.dump(variables_list, outfile, indent=4)
