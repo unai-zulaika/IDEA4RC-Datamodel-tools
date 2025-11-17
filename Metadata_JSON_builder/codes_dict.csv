@@ -10,10 +10,14 @@ concept_id,concept_synonym_name
 45883458,Smoking - Former smoker
 45879404,Smoking - Never smoker
 4074035,Alcohol - Current drinker
+4220362,Alcohol - Ex-drinker
+37204556,Alcohol - Lifetime non-drinker of alcohol
+4117706,Alcohol - Ex-problem drinker
 36303470,ECOG PS label - Answers of ECOG Performance Status [Interpretation]
 36303744,Karnofsy index label - Answers of Karnofsky Performance Status [Interpretation]
 1340204,Other Genetic syndrome - History of event
 4273629,Previous cancer treatment - Chemotherapy
+4121697,Previous cancer treatment - Surgery
 42535584,Previous cancer treatment - Comprehensive medication therapy review
 4295112,Previous cancer treatment - Immunological therapy
 2000100071,"Status of patient at last follow-up - Alive, No Evidence of Disease (NED)"
@@ -22,11 +26,17 @@ concept_id,concept_synonym_name
 2000100073,Status of patient at last follow-up - Dead of Other Cause (DOC)
 2000100074,Status of patient at last follow-up - Dead of Unknown Cause (DUC)
 2000100075,Status of patient at last follow-up - Alive With Disease (AWD)
+4163894,Status of patient at last follow-up - Lost to follow-up
 4171863,Type of biopsy - Fine needle biopsy
 4321878,Type of biopsy - Core needle biopsy
 4321986,Type of biopsy - Incisional biopsy
 4228202,Type of biopsy - Excisional biopsy
 4279903,Type of biopsy - Excision
+1634371,Biopsy grading - Grade-1
+1634752,Biopsy grading - Grade-2
+1633749,Biopsy grading - Grade-3
+1635587,Biopsy grading - Grade-H
+1634085,Biopsy grading - Grade-L
 37156145,Histology group - Squamous cell carcinoma
 37152526,Histology group - Adenocarcinoma
 1242310,Histology group - Neuroendocrine carcinoma
@@ -34,10 +44,12 @@ concept_id,concept_synonym_name
 4241843,Histology group - Adenosquamous carcinoma
 4284401,Histology group - Teratocarcinoma
 37116896,Histology group - Nuclear protein in testis associated carcinoma
+2000100004,Histology group - HPV-related Multiphenotypic Sinonasal Carcinoma
 4295574,Histology group - Olfactory neuroblastoma
 4098585,"Histology group - Odontogenic tumor, malignant"
 4019487,Histology group - Lipomatous neoplasm (Adipocytic tumours)
 4266648,Histology group - Fibromatous neoplasm of borderline malignancy
+2000100005,Histology group - So-called fibrohistiocytic tumours
 2000100006,Histology group - Vascular tumours
 2000100007,Histology group - Pericytic (perivascular) tumours
 4327493,Histology group - Smooth muscle tumor
@@ -76,7 +88,10 @@ concept_id,concept_synonym_name
 2000000015,Site - Central Nervous System
 4078953,"Histology subgroup - Squamous cell carcinoma, keratinizing"
 4206785,Histology subgroup - Schneiderian carcinoma
+2000100012,Histology subgroup - Non-keratinizing squamous cell carcinoma: SMARCB1 (INI-1)-deficient Sinonasal Carcinoma
+2000100013,"Histology subgroup - Non-keratinizing squamous cell carcinoma: Transitional (cylindrical cell, Schneiderian) carcinoma"
 4009590,"Histology subgroup - Squamous cell carcinoma, spindle cell"
+2000100014,Histology subgroup - Spindle cell (sarcomatoid) squamous cell carcinoma: SMARCB1 (INI-1)
 4247661,Histology subgroup - Lymphoepithelial carcinoma
 4029973,Histology subgroup - Basaloid squamous cell carcinoma
 37156145,Histology subgroup - Squamous cell carcinoma
@@ -102,6 +117,7 @@ concept_id,concept_synonym_name
 4224593,Histology subgroup - Juvenile carcinoma of the breast
 4323699,"Histology subgroup - Paget's disease, extramammary (except Paget's disease of bone)"
 4029680,Histology subgroup - Malignant myoepithelioma
+4321002,Histology subgroup - Epithelial-myoepithelial carcinoma
 4066512,Histology subgroup - Carcinoma ex pleomorphic adenoma
 4182993,Histology subgroup - Sebaceous adenocarcinoma
 4271564,Histology subgroup - Carcinosarcoma
@@ -115,12 +131,15 @@ concept_id,concept_synonym_name
 1242310,Histology subgroup - Neuroendocrine carcinoma
 4098585,"Histology subgroup - Odontogenic tumor, malignant"
 37116966,Histology subgroup - Clear cell odontogenic carcinoma
+2000100015,Histology subgroup - SMARCB1 (INI-1)-deficient Sinonasal undifferentiated Carcinoma
 2000100016,Histology subgroup - Sinonasal SMARCA4 deficient carcinoma;
+2000100017,Histology subgroup - IDH2-mutated sinonasal undifferentiated neoplasm
 44783808,Histology subgroup - Undifferentiated carcinoma of nasal sinus
 4243327,"Histology subgroup - Carcinoma, undifferentiated"
 4241843,Histology subgroup - Adenosquamous carcinoma
 4284401,Histology subgroup - Teratocarcinoma
 37116896,Histology subgroup - Nuclear protein in testis associated carcinoma
+2000100018,Histology subgroup - HPV-related Multiphenotypic Sinonasal Carcinoma
 4295574,Histology subgroup - Olfactory neuroblastoma
 4021372,Histology subgroup - Atypical lipomatous tumor
 4102790,"Histology subgroup - Liposarcoma, well differentiated"
@@ -128,6 +147,7 @@ concept_id,concept_synonym_name
 4101123,Histology subgroup - Myxoid liposarcoma
 4010104,Histology subgroup - Pleomorphic liposarcoma
 1243142,Histology subgroup - Myxoid pleomorphic liposarcoma
+45766452,Histology subgroup - Palmar/plantar-type fibromatosis
 4264204,Histology subgroup - Aggressive fibromatosis
 45766468,Histology subgroup - Lipofibromatosis
 4030132,Histology subgroup - Giant cell fibroblastoma
@@ -136,10 +156,12 @@ concept_id,concept_synonym_name
 37116996,Histology subgroup - Solitary fibrous tumor and hemangiopericytoma grade 2
 37116997,Histology subgroup - Solitary fibrous tumor and hemangiopericytoma grade 3
 4021373,Histology subgroup - Myofibroblastic tumour
+45766454,Histology subgroup - Low-grade myofibroblastic sarcoma
 4029679,Histology subgroup - Cellular fibroma
 45766450,Histology subgroup - Myxoinflammatory fibroblastic sarcoma
 4202374,Histology subgroup - Fibrosarcoma
 45771359,Histology subgroup - Myxofibrosarcoma
+45771361,Histology subgroup - Low-grade fibromyxoid sarcoma
 45766456,Histology subgroup - Sclerosing epithelioid fibrosarcoma
 4029525,Histology subgroup - Plexiform fibrohistiocytic tumour
 4218898,Histology subgroup - Giant cell tumour of soft parts
@@ -153,6 +175,7 @@ concept_id,concept_synonym_name
 45766493,Histology subgroup - Retiform haemangioendothelioma
 4030138,Histology subgroup - Papillary intralymphatic angioendothelioma
 45766494,Histology subgroup - Composite haemangioendothelioma
+45766492,Histology subgroup - Pseudomyogenic (epithelioid sarcoma-like) hemangioendothelioma
 4014760,Histology subgroup - Glomus tumor
 4028856,"Histology subgroup - Glomus tumor, malignant"
 4327493,Histology subgroup - Smooth muscle tumour
@@ -176,6 +199,7 @@ concept_id,concept_synonym_name
 4029526,Histology subgroup - Angiomatoid fibrous histiocytoma
 45766448,Histology subgroup - Pleomorphic hyalinizing angiectatic tumour
 1243125,Histology subgroup - Hemosiderotic fibrolipomatous tumor
+1243130,Histology subgroup - NTRK-rearranged spindle cell neoplasm
 4268491,Histology subgroup - Synovial sarcoma
 4244886,Histology subgroup - Epithelioid sarcoma
 4339208,Histology subgroup - Alveolar soft part sarcoma
@@ -196,7 +220,10 @@ concept_id,concept_synonym_name
 45766484,"Histology subgroup - Phosphaturic mesenchymal tumor, benign"
 45766485,"Histology subgroup - Phosphaturic mesenchymal tumour, malignant"
 4239956,Histology subgroup - Angiomyxoma
+2000100019,Histology subgroup - NTRK-rearranged spindle cell neoplasm (emerging)
 45766528,Histology subgroup - Ewing sarcoma / peripheral neuroectodermal tumor
+37155974,Histology subgroup - Round cell sarcoma with EWSR1–non-ETS fusions
+37152438,Histology subgroup - CIC-rearranged sarcoma
 37152440,Histology subgroup - Sarcoma with BCOR genetic alterations
 4290926,"Histology subgroup - Endometrial stromal sarcoma, high grade"
 4028557,"Histology subgroup - Endometrial stromal sarcoma, low grade"
@@ -231,6 +258,7 @@ concept_id,concept_synonym_name
 4242559,"Histology subgroup - Mesenchymoma, benign"
 4233081,"Histology subgroup - Mesenchymoma, malignant"
 37152181,Histology subgroup - Endometrial stromal sarcoma
+1073930,Histology subgroup - Sex cord-stromal tumor of uncertain behavior
 4029173,Histology subgroup - Langerhans cell sarcoma
 42872917,Histology subgroup - Fibroblastic reticular cell tumor
 4135215,Histology subgroup - Adenosarcoma
@@ -357,6 +385,7 @@ concept_id,concept_synonym_name
 4277442,Subsite - Seminal Vescicle structure
 4172591,Subsite - Spermatic Cord structure
 4238088,Subsite - Testis structure
+4077311,Subsite - Penile structure
 4149192,Subsite - Uterine structure
 4049448,Subsite - Ovarian structure
 4151444,Subsite - Fallopian tube structure
@@ -378,6 +407,7 @@ concept_id,concept_synonym_name
 2000100025,Other imaging for primary site - Fluorodeoxyglucose positron emission tomography
 2000100026,Other imaging for primary site - Positron emission tomography using other tracers
 2000100026,Other imaging for neck - Positron emission tomography using other tracers
+4056836,Other imaging for metastasis - Standard chest X-ray
 4217238,Other imaging for metastasis - Radioisotope scan of bone
 4305790,Other imaging for metastasis - Positron emission tomography
 2000100025,Other imaging for metastasis - Fluorodeoxyglucose positron emission tomography
@@ -445,6 +475,7 @@ concept_id,concept_synonym_name
 1634829,cM - AJCC/UICC 6th clinical M1 Category
 1633276,cM - AJCC/UICC 7th clinical M1 Category
 1633974,cM - AJCC/UICC 8th clinical M1 Category
+36769946,Extra-nodal extension (rEne) - ENE-
 36770618,Extra-nodal extension (rEne) - ENE+
 1635842,Clinical Staging - AJCC/UICC 6th clinical Stage 0
 1633828,Clinical Staging - AJCC/UICC 7th clinical Stage 0
@@ -577,14 +608,29 @@ concept_id,concept_synonym_name
 1634643,Margins after surgery - R0: No residual tumor
 1633801,Margins after surgery - R1: Microscopic residual tumor
 1634484,Margins after surgery - R2: Macroscopic residual tumor
+1634371,Surgical specimen grading only in untreated tumours - Grade-1
+1634752,Surgical specimen grading only in untreated tumours - Grade-2
+1633749,Surgical specimen grading only in untreated tumours - Grade-3
+1635587,Surgical specimen grading only in untreated tumours - Grade-H
+1634085,Surgical specimen grading only in untreated tumours - Grade-L
 4112106,Laterality of the dissection - Ipsilateral
 4117496,Laterality of the dissection - Bilateral Sampling
 4112107,Laterality of the dissection - Controlateral
 4132135,Surgical complications (Clavien-Dindo Classification) - Absent
+715974,Surgical complications (Clavien-Dindo Classification) - Clavien-Dindo complication scale: Grade I
+715975,Surgical complications (Clavien-Dindo Classification) - Clavien-Dindo complication scale: Grade II
+715976,Surgical complications (Clavien-Dindo Classification) - Clavien-Dindo complication scale: Grade III
+715977,Surgical complications (Clavien-Dindo Classification) - Clavien-Dindo complication scale: Grade IIIA
+715978,Surgical complications (Clavien-Dindo Classification) - Clavien-Dindo complication scale: Grade IIIB
+715979,Surgical complications (Clavien-Dindo Classification) - Clavien-Dindo complication scale: Grade IV
+715980,Surgical complications (Clavien-Dindo Classification) - Clavien-Dindo complication scale: Grade IVA
+715981,Surgical complications (Clavien-Dindo Classification) - Clavien-Dindo complication scale: Grade IVB
+715982,Surgical complications (Clavien-Dindo Classification) - Clavien-Dindo complication scale: Grade V
 4273629,type of systemic treatment - Chemotherapy
 40310107,type of systemic treatment - Immunotherapy
 4179711,Intent - Palliative
 4162591,Intent - Curative procedure intent
+44808409,Setting - Neo-adjuvant
 2000100028,Setting - Concomitant
 44804498,Setting - Adjuvant
 2000100029,Setting - Systemic treatment alone
@@ -646,6 +692,7 @@ concept_id,concept_synonym_name
 35804569,Regimen - Regorafenib monotherapy
 2000100070,Regimen - high dose Ifosfamide
 44788181,Reason for end of treatment - Completed successfully
+4162594,Reason for end of treatment - Chemotherapy changed acute chemotherapy toxicity
 2000100030,Reason for end of treatment - Treatment ended due to comorbidity
 4240582,Reason for end of treatment - Intolerance to drug
 37017062,Reason for end of treatment - Procedure discontinued by patient
@@ -676,6 +723,9 @@ concept_id,concept_synonym_name
 2000100042,Treatment technique - Passive scattering
 2000100043,Treatment technique - Single beam optimization
 2000100044,Treatment technique - Intensity modulated proton therapy (IMPT)
+2000100047,Field of Re-irradiation - Re-irradiation in field of first radiation
+2000100048,Field of Re-irradiation - Re-irradiation out of field of first radiation
+2000100049,Field of Re-irradiation - Re-irradiation marginal field of first radiation
 44788181,RT Treatment Completed as Planned? - Completed successfully
 4161588,RT Treatment Completed as Planned? - Radiotherapy course change due to acute radiotherapy toxicity
 4105297,RT Treatment Completed as Planned? - Intolerance

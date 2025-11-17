@@ -57,7 +57,8 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
                     continue
 
                 # Regular expression to match the format
-                pattern = r"^(?P<text>[^-]+) - (?P<number>\d+)$"
+                # Use .+ instead of [^-]+ to allow dashes in the text part (e.g., "Ex-drinker")
+                pattern = r"^(?P<text>.+) - (?P<number>\d+)$"
 
                 # Match the pattern
                 match = re.match(pattern, line)
@@ -73,9 +74,9 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
                         codes_dict[dataelementconcept] = []
                     if not number in codes_dict[dataelementconcept]:
                         codes_dict[dataelementconcept].append(number)
-            if dataelementconcept == "Patient_alcohol":
-                print(codes_dict[dataelementconcept])
-                exit()
+            # if dataelementconcept == "Patient_alcohol":
+            #     print(codes_dict[dataelementconcept])
+            #     exit()
 
 # convert sets to lists
 # for key in codes_dict:

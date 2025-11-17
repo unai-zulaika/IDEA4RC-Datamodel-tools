@@ -52,8 +52,14 @@ for index, sheet_number in enumerate(tqdm(SHEETS_TO_PROCESS)):
         if datatype == "Code" or datatype == "CustomCode":
 
             for line in str(terms).splitlines():
+                # Skip empty or whitespace-only lines
+                line = line.strip()
+                if not line:
+                    continue
+                
                 # Regular expression to match the format
-                pattern = r"^(?P<text>[^-]+) - (?P<number>\d+)$"
+                # Use .+ instead of [^-]+ to allow dashes in the text part (e.g., "Ex-drinker")
+                pattern = r"^(?P<text>.+) - (?P<number>\d+)$"
 
                 # Match the pattern
                 match = re.match(pattern, line)
